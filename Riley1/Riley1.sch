@@ -457,106 +457,106 @@ F 3 "https://www.mouser.com/datasheet/2/176/71061-1102136.pdf" H 2900 7150 50  0
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	2700 6600 2800 6700
+	2650 6600 2750 6700
 Entry Wire Line
-	2700 6500 2800 6600
+	2650 6500 2750 6600
 Entry Wire Line
-	2700 6400 2800 6500
+	2650 6400 2750 6500
 Entry Wire Line
-	2700 6300 2800 6400
+	2650 6300 2750 6400
 Entry Wire Line
-	2700 6200 2800 6300
+	2650 6200 2750 6300
 Entry Wire Line
-	2700 6100 2800 6200
+	2650 6100 2750 6200
 Entry Wire Line
-	2700 6000 2800 6100
+	2650 6000 2750 6100
 Entry Wire Line
-	2700 5900 2800 6000
+	2650 5900 2750 6000
 Entry Wire Line
-	2700 5800 2800 5900
+	2650 5800 2750 5900
 Entry Wire Line
-	2700 5700 2800 5800
+	2650 5700 2750 5800
 Entry Wire Line
-	2700 5600 2800 5700
+	2650 5600 2750 5700
 Entry Wire Line
-	2700 5500 2800 5600
+	2650 5500 2750 5600
 Entry Wire Line
-	2700 5400 2800 5500
+	2650 5400 2750 5500
 Entry Wire Line
-	2700 5300 2800 5400
+	2650 5300 2750 5400
 Entry Wire Line
-	2700 5200 2800 5300
+	2650 5200 2750 5300
 Entry Wire Line
-	2700 5100 2800 5200
-Text Label 2800 5200 0    31   ~ 0
+	2650 5100 2750 5200
+Text Label 2750 5200 2    31   ~ 0
 A0
-Text Label 2800 5300 0    31   ~ 0
+Text Label 2750 5300 2    31   ~ 0
 A1
-Text Label 2800 5400 0    31   ~ 0
+Text Label 2750 5400 2    31   ~ 0
 A2
-Text Label 2800 5500 0    31   ~ 0
+Text Label 2750 5500 2    31   ~ 0
 A3
-Text Label 2800 5600 0    31   ~ 0
+Text Label 2750 5600 2    31   ~ 0
 A4
-Text Label 2800 5700 0    31   ~ 0
+Text Label 2750 5700 2    31   ~ 0
 A5
-Text Label 2800 5800 0    31   ~ 0
+Text Label 2750 5800 2    31   ~ 0
 A6
-Text Label 2800 5900 0    31   ~ 0
+Text Label 2750 5900 2    31   ~ 0
 A7
-Text Label 2800 6000 0    31   ~ 0
+Text Label 2750 6000 2    31   ~ 0
 A8
-Text Label 2800 6100 0    31   ~ 0
+Text Label 2750 6100 2    31   ~ 0
 A9
-Text Label 2800 6200 0    31   ~ 0
+Text Label 2750 6200 2    31   ~ 0
 A10
-Text Label 2800 6300 0    31   ~ 0
+Text Label 2750 6300 2    31   ~ 0
 A11
-Text Label 2800 6400 0    31   ~ 0
+Text Label 2750 6400 2    31   ~ 0
 A12
-Text Label 2800 6500 0    31   ~ 0
+Text Label 2750 6500 2    31   ~ 0
 A13
-Text Label 2800 6600 0    31   ~ 0
+Text Label 2750 6600 2    31   ~ 0
 A14
-Text Label 2800 6700 0    31   ~ 0
+Text Label 2750 6700 2    31   ~ 0
 A15
-Text Label 2800 6800 0    31   ~ 0
+Text Label 2750 6800 2    31   ~ 0
 A16
-Text Label 2700 5000 1    31   ~ 0
+Text Label 2650 5000 1    31   ~ 0
 A[0..23]
 Entry Wire Line
-	3600 5200 3700 5100
+	3650 5200 3750 5100
 Entry Wire Line
-	3600 5300 3700 5200
+	3650 5300 3750 5200
 Entry Wire Line
-	3600 5400 3700 5300
+	3650 5400 3750 5300
 Entry Wire Line
-	3600 5500 3700 5400
+	3650 5500 3750 5400
 Entry Wire Line
-	3600 5600 3700 5500
+	3650 5600 3750 5500
 Entry Wire Line
-	3600 5700 3700 5600
+	3650 5700 3750 5600
 Entry Wire Line
-	3600 5800 3700 5700
+	3650 5800 3750 5700
 Entry Wire Line
-	3600 5900 3700 5800
-Text Label 3600 5200 2    31   ~ 0
+	3650 5900 3750 5800
+Text Label 3650 5200 0    31   ~ 0
 D0
-Text Label 3600 5300 2    31   ~ 0
+Text Label 3650 5300 0    31   ~ 0
 D1
-Text Label 3600 5400 2    31   ~ 0
+Text Label 3650 5400 0    31   ~ 0
 D2
-Text Label 3600 5500 2    31   ~ 0
+Text Label 3650 5500 0    31   ~ 0
 D3
-Text Label 3600 5600 2    31   ~ 0
+Text Label 3650 5600 0    31   ~ 0
 D4
-Text Label 3600 5700 2    31   ~ 0
+Text Label 3650 5700 0    31   ~ 0
 D5
-Text Label 3600 5800 2    31   ~ 0
+Text Label 3650 5800 0    31   ~ 0
 D6
-Text Label 3600 5900 2    31   ~ 0
+Text Label 3650 5900 0    31   ~ 0
 D7
-Text Label 3700 4950 1    31   ~ 0
+Text Label 3750 4950 1    31   ~ 0
 D[0..7]
 $Comp
 L power:GND #PWR0109
@@ -581,7 +581,7 @@ F 3 "" H 3200 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4700 3200 5000
+	3200 4700 3200 4950
 $Comp
 L Device:C C4
 U 1 1 5C4C6FC0
@@ -602,30 +602,32 @@ Wire Wire Line
 	2100 6200 2100 7200
 Wire Wire Line
 	2100 7200 2700 7200
-Connection ~ 3200 7200
-Text Label 3600 6600 0    31   ~ 0
+Text Label 3650 6600 0    31   ~ 0
 ~WE
 Text Label 7350 2300 0    31   ~ 0
 ~WE
 Text Label 6750 2200 2    31   ~ 0
 PHI2
 Wire Wire Line
-	2800 6800 2700 6800
-Wire Wire Line
 	2700 6800 2700 7200
 Connection ~ 2700 7200
 Wire Wire Line
 	2700 7200 3200 7200
+Text Label 3650 6700 0    31   ~ 0
+~ROMSEL
+Text Label 3650 6800 0    31   ~ 0
+~ROMSEL
+Wire Wire Line
+	2750 6800 2700 6800
+Connection ~ 3200 4950
+Wire Wire Line
+	3200 4950 3200 5000
 Wire Bus Line
 	3900 1600 3900 2550
 Wire Bus Line
-	3700 4800 3700 5800
+	3750 4800 3750 5800
 Wire Bus Line
 	2400 1600 2400 3350
 Wire Bus Line
-	2700 4800 2700 6700
-Text Label 3600 6700 0    31   ~ 0
-~ROMSEL
-Text Label 3600 6800 0    31   ~ 0
-~ROMSEL
+	2650 4800 2650 6600
 $EndSCHEMATC

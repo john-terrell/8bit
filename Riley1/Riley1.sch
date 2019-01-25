@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 65xx:WD65C816S_ U1
+L Riley1-rescue:WD65C816S_-65xx U1
 U 1 1 5C4A256D
 P 3150 2850
 F 0 "U1" H 3300 3950 60  0000 C CNN
@@ -69,7 +69,7 @@ F 3 "" H 3150 4200 50  0001 C CNN
 $EndComp
 Connection ~ 3150 4200
 $Comp
-L dk_Logic-Gates-and-Inverters:SN74HC00N U3
+L Riley1-rescue:SN74HC00N-dk_Logic-Gates-and-Inverters U3
 U 1 1 5C4A4C43
 P 7050 2900
 F 0 "U3" H 7150 3850 60  0000 C CNN
@@ -89,7 +89,7 @@ F 12 "Active" H 7250 4100 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Logic-Gates-and-Inverters:SN74HC14N U2
+L Riley1-rescue:SN74HC14N-dk_Logic-Gates-and-Inverters U2
 U 1 1 5C4A508E
 P 5800 2950
 F 0 "U2" H 5950 3500 60  0000 C CNN

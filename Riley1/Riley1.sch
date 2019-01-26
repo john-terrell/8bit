@@ -177,7 +177,6 @@ F 3 "" H 5800 3450 50  0001 C CNN
 	1    5800 3450
 	1    0    0    -1  
 $EndComp
-Connection ~ 5800 3450
 $Comp
 L power:VCC #PWR0104
 U 1 1 5C4A77C6
@@ -189,7 +188,6 @@ F 3 "" H 5800 2350 50  0001 C CNN
 	1    5800 2350
 	1    0    0    -1  
 $EndComp
-Connection ~ 5800 2350
 $Comp
 L power:VCC #PWR0105
 U 1 1 5C4A7951
@@ -227,12 +225,10 @@ Wire Wire Line
 	7050 1900 7750 1900
 Wire Wire Line
 	7750 1900 7750 2700
-Connection ~ 7050 1900
 Wire Wire Line
 	7050 3900 7750 3900
 Wire Wire Line
 	7750 3900 7750 3000
-Connection ~ 7050 3900
 NoConn ~ 5500 2750
 NoConn ~ 5500 2850
 NoConn ~ 5500 2950

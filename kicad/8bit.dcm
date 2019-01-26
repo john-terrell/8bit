@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GLS29E0010-DIP32
+D EEPROM 128K x 8, DIP-32
+K Parallel EEPROM 128Kb
+F https://www.mouser.com/datasheet/2/176/71061-1102136.pdf
+$ENDCMP
+#
+#End Doc Library

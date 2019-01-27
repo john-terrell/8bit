@@ -449,18 +449,15 @@ Text Label 6100 2750 0    31   ~ 0
 !E
 Text Label 6750 2600 2    31   ~ 0
 ~IO_SEL
-Wire Bus Line
-	3900 1600 3900 2550
-Wire Bus Line
-	2400 1600 2400 3350
 Text Label 6750 2800 2    31   ~ 0
 ~ROM_SEL
 Text Label 7350 2700 0    31   ~ 0
 ~RAM_SEL
-Text Label 6750 3000 2    31   ~ 0
-~E000_SEL
-Text Label 6750 3200 2    31   ~ 0
-~F000_SEL
-Text Label 7350 3100 0    31   ~ 0
-~ROM_SEL
+NoConn ~ 7350 3100
+NoConn ~ 6750 3200
+NoConn ~ 6750 3000
+Wire Bus Line
+	3900 1600 3900 2550
+Wire Bus Line
+	2400 1600 2400 3350
 $EndSCHEMATC

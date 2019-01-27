@@ -11,4 +11,15 @@ K Parallel EEPROM 128Kb
 F https://www.mouser.com/datasheet/2/176/71061-1102136.pdf
 $ENDCMP
 #
+$CMP SN74HC08N
+D IC GATE AND 4CH 2-INP 14DIP
+K 296-1570-5-ND 74HC
+F http://www.ti.com/lit/ds/symlink/sn74hc08.pdf
+$ENDCMP
+#
+$CMP SN74HC138N
+D 3 line to 8-line decoders demultiplexers
+F http://www.ti.com/lit/gpn/sn74hc138
+$ENDCMP
+#
 #End Doc Library

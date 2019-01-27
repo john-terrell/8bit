@@ -229,7 +229,6 @@ Wire Wire Line
 	7050 3900 7750 3900
 Wire Wire Line
 	7750 3900 7750 3000
-NoConn ~ 5500 2750
 NoConn ~ 5500 2850
 NoConn ~ 5500 2950
 NoConn ~ 5500 3050
@@ -238,16 +237,9 @@ NoConn ~ 6100 3150
 NoConn ~ 6100 3050
 NoConn ~ 6100 2950
 NoConn ~ 6100 2850
-NoConn ~ 6100 2750
-NoConn ~ 6750 2600
-NoConn ~ 6750 2800
-NoConn ~ 6750 3000
-NoConn ~ 6750 3200
 NoConn ~ 6750 3400
 NoConn ~ 6750 3600
 NoConn ~ 7350 3500
-NoConn ~ 7350 3100
-NoConn ~ 7350 2700
 $Comp
 L power:GND #PWR0107
 U 1 1 5C4AC5DD
@@ -451,8 +443,24 @@ U 5C4D9B3D
 F0 "Memory" 50
 F1 "Memory.sch" 50
 $EndSheet
+Text Label 5500 2750 2    31   ~ 0
+E
+Text Label 6100 2750 0    31   ~ 0
+!E
+Text Label 6750 2600 2    31   ~ 0
+~IO_SEL
 Wire Bus Line
 	3900 1600 3900 2550
 Wire Bus Line
 	2400 1600 2400 3350
+Text Label 6750 2800 2    31   ~ 0
+~ROM_SEL
+Text Label 7350 2700 0    31   ~ 0
+~RAM_SEL
+Text Label 6750 3000 2    31   ~ 0
+~E000_SEL
+Text Label 6750 3200 2    31   ~ 0
+~F000_SEL
+Text Label 7350 3100 0    31   ~ 0
+~ROM_SEL
 $EndSCHEMATC

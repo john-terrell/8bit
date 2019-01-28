@@ -5,6 +5,12 @@ D CMOS SRAM
 F https://componentsearchengine.com/Datasheets/1/AS6C4008-55PCN.pdf
 $ENDCMP
 #
+$CMP DS1813
+D 5V EconoReset with Pushbutton
+K Reset
+F https://datasheets.maximintegrated.com/en/ds/DS1813.pdf
+$ENDCMP
+#
 $CMP GLS29E0010-DIP32
 D EEPROM 128K x 8, DIP-32
 K Parallel EEPROM 128Kb

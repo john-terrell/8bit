@@ -373,8 +373,6 @@ Text Label 2950 3350 2    31   ~ 0
 PHI2
 Text Label 2950 3450 2    31   ~ 0
 ~IRQ
-Text Label 2950 3550 2    31   ~ 0
-~NMI
 Text Label 2950 3650 2    31   ~ 0
 R~W
 Text Label 2950 4250 0    31   ~ 0
@@ -413,10 +411,12 @@ Text Label 8900 1950 2    31   ~ 0
 Text Label 9500 1850 0    31   ~ 0
 ~RAM_SEL
 $Sheet
-S 5250 6550 700  800 
+S 4650 6500 700  800 
 U 5C4E8467
 F0 "Devices" 50
 F1 "devices.sch" 50
+F2 "~IOSEL" I L 4650 6850 50 
+F3 "A[0..23]" I L 4650 6600 50 
 $EndSheet
 $Comp
 L Riley1:DS1813 U9
@@ -645,98 +645,98 @@ Wire Wire Line
 $Comp
 L Riley1:ECS-2100X X1
 U 1 1 5C507331
-P 8400 4550
-F 0 "X1" H 8550 4900 50  0000 R CNN
-F 1 "ECS-2100X" V 8200 4750 50  0000 R CNN
-F 2 "" H 8400 4550 50  0001 C CNN
-F 3 "" H 8400 4550 50  0001 C CNN
-	1    8400 4550
+P 7800 4600
+F 0 "X1" H 7950 4950 50  0000 R CNN
+F 1 "ECS-2100X" V 7600 4800 50  0000 R CNN
+F 2 "" H 7800 4600 50  0001 C CNN
+F 3 "" H 7800 4600 50  0001 C CNN
+	1    7800 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Logic-Flip-Flops:SN74HC74N U11
 U 1 1 5C5075D4
-P 9500 4650
-F 0 "U11" H 9450 5350 60  0000 C CNN
-F 1 "SN74HC74N" H 9450 5244 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 9700 4850 60  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 9700 4950 60  0001 L CNN
-F 4 "296-1602-5-ND" H 9700 5050 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74HC74N" H 9700 5150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 9700 5250 60  0001 L CNN "Category"
-F 7 "Logic - Flip Flops" H 9700 5350 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 9700 5450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74HC74N/296-1602-5-ND/277248" H 9700 5550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC FF D-TYPE DUAL 1BIT 14DIP" H 9700 5650 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 9700 5750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9700 5850 60  0001 L CNN "Status"
-	1    9500 4650
+P 8900 4700
+F 0 "U11" H 8850 5400 60  0000 C CNN
+F 1 "SN74HC74N" H 8850 5294 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 9100 4900 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 9100 5000 60  0001 L CNN
+F 4 "296-1602-5-ND" H 9100 5100 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC74N" H 9100 5200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9100 5300 60  0001 L CNN "Category"
+F 7 "Logic - Flip Flops" H 9100 5400 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 9100 5500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC74N/296-1602-5-ND/277248" H 9100 5600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC FF D-TYPE DUAL 1BIT 14DIP" H 9100 5700 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 9100 5800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9100 5900 60  0001 L CNN "Status"
+	1    8900 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8650 4550 8850 4550
+	8050 4600 8250 4600
 Wire Wire Line
-	8850 4550 8850 4350
+	8250 4600 8250 4400
 Wire Wire Line
-	8850 4350 9100 4350
+	8250 4400 8500 4400
 Wire Wire Line
-	8400 4150 8950 4150
+	7800 4200 8350 4200
 Wire Wire Line
-	8400 4950 8400 5250
+	7800 5000 7800 5300
 Wire Wire Line
-	9800 4650 9950 4650
+	9200 4700 9350 4700
 Wire Wire Line
-	9950 4650 9950 3850
+	9350 4700 9350 3900
 Wire Wire Line
-	9950 3850 9000 3850
+	9350 3900 8400 3900
 Wire Wire Line
-	9000 3850 9000 4550
+	8400 3900 8400 4600
 Wire Wire Line
-	9000 4550 9100 4550
+	8400 4600 8500 4600
 Wire Wire Line
-	9100 4450 8950 4450
+	8500 4500 8350 4500
 Wire Wire Line
-	8950 4450 8950 4150
-Connection ~ 8950 4150
+	8350 4500 8350 4200
+Connection ~ 8350 4200
 Wire Wire Line
-	8950 4650 8950 4450
+	8350 4700 8350 4500
 Wire Wire Line
-	8950 4650 9100 4650
-Connection ~ 8950 4450
+	8350 4700 8500 4700
+Connection ~ 8350 4500
 Wire Wire Line
-	9800 4550 10050 4550
-Text Label 10050 4550 0    50   ~ 0
+	9200 4600 9450 4600
+Text Label 9450 4600 0    50   ~ 0
 PHI2
 $Comp
 L power:GND #PWR014
 U 1 1 5C5147F9
-P 10050 5250
-F 0 "#PWR014" H 10050 5000 50  0001 C CNN
-F 1 "GND" H 10055 5077 50  0000 C CNN
-F 2 "" H 10050 5250 50  0001 C CNN
-F 3 "" H 10050 5250 50  0001 C CNN
-	1    10050 5250
+P 9450 5300
+F 0 "#PWR014" H 9450 5050 50  0001 C CNN
+F 1 "GND" H 9455 5127 50  0000 C CNN
+F 2 "" H 9450 5300 50  0001 C CNN
+F 3 "" H 9450 5300 50  0001 C CNN
+	1    9450 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR013
 U 1 1 5C514861
-P 10050 4150
-F 0 "#PWR013" H 10050 4000 50  0001 C CNN
-F 1 "VCC" H 10067 4323 50  0000 C CNN
-F 2 "" H 10050 4150 50  0001 C CNN
-F 3 "" H 10050 4150 50  0001 C CNN
-	1    10050 4150
+P 9450 4200
+F 0 "#PWR013" H 9450 4050 50  0001 C CNN
+F 1 "VCC" H 9467 4373 50  0000 C CNN
+F 2 "" H 9450 4200 50  0001 C CNN
+F 3 "" H 9450 4200 50  0001 C CNN
+	1    9450 4200
 	1    0    0    -1  
 $EndComp
-Text Notes 8700 5550 0    50   ~ 0
+Text Notes 8100 5600 0    50   ~ 0
 Clock Circuit\n(PHI2 = 0.5 * ECS-2100X Output)
-NoConn ~ 9100 4750
-NoConn ~ 9100 4850
-NoConn ~ 9100 4950
-NoConn ~ 9100 5050
-NoConn ~ 9800 4850
-NoConn ~ 9800 4750
+NoConn ~ 8500 4800
+NoConn ~ 8500 4900
+NoConn ~ 8500 5000
+NoConn ~ 8500 5100
+NoConn ~ 9200 4900
+NoConn ~ 9200 4800
 Wire Bus Line
 	1300 6650 800  6650
 Text Label 800  6650 0    31   ~ 0
@@ -785,8 +785,6 @@ Wire Wire Line
 	2450 7200 2750 7200
 Text Label 2450 7200 0    47   ~ 0
 !E
-Wire Wire Line
-	3450 6750 3750 6750
 Text Label 3750 6900 2    31   ~ 0
 ~E000_SEL
 Text Label 8900 2150 2    31   ~ 0
@@ -860,9 +858,9 @@ $EndComp
 Wire Wire Line
 	5650 1200 5850 1200
 Wire Wire Line
-	8950 4150 9600 4150
+	8350 4200 9000 4200
 Wire Wire Line
-	8400 5250 9600 5250
+	7800 5300 9000 5300
 $Comp
 L Riley1:CD74HC245 U13
 U 1 1 5C500719
@@ -1114,6 +1112,26 @@ Wire Wire Line
 Wire Wire Line
 	4250 6050 5400 6050
 Connection ~ 5400 6050
+Connection ~ 9000 4200
+Wire Wire Line
+	9000 4200 9450 4200
+Connection ~ 9000 5300
+Wire Wire Line
+	9000 5300 9450 5300
+Connection ~ 5850 1200
+Wire Wire Line
+	5850 1200 6150 1200
+Text Notes 5650 4100 0    50   ~ 0
+Bank Address Latch Circuit\n
+NoConn ~ 2950 3550
+Wire Wire Line
+	4150 6750 4150 6850
+Wire Wire Line
+	4150 6850 4650 6850
+Wire Wire Line
+	3450 6750 4150 6750
+Wire Bus Line
+	4350 6600 4650 6600
 Wire Bus Line
 	3050 2200 3050 3150
 Wire Bus Line
@@ -1124,13 +1142,6 @@ Wire Bus Line
 	1550 2200 1550 3950
 Wire Bus Line
 	4850 2350 4850 5400
-Connection ~ 9600 4150
-Wire Wire Line
-	9600 4150 10050 4150
-Connection ~ 9600 5250
-Wire Wire Line
-	9600 5250 10050 5250
-Connection ~ 5850 1200
-Wire Wire Line
-	5850 1200 6150 1200
+Text Label 4350 6600 0    47   ~ 0
+A[0..23]
 $EndSCHEMATC

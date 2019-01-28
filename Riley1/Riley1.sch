@@ -284,23 +284,23 @@ Entry Wire Line
 Entry Wire Line
 	2950 3050 3050 2950
 Text Label 2950 2550 2    31   ~ 0
-D0
+Q0
 Text Label 2950 2650 2    31   ~ 0
-D1
+Q1
 Text Label 2950 2750 2    31   ~ 0
-D2
+Q2
 Text Label 2950 2850 2    31   ~ 0
-D3
+Q3
 Text Label 2950 2950 2    31   ~ 0
-D4
+Q4
 Text Label 2950 3050 2    31   ~ 0
-D5
+Q5
 Text Label 2950 3150 2    31   ~ 0
-D6
+Q6
 Text Label 2950 3250 2    31   ~ 0
-D7
+Q7
 Text Label 3050 2350 1    31   ~ 0
-D[0..7]
+Q[0..7]
 Text Label 1650 2550 0    31   ~ 0
 A0
 Text Label 1650 2650 0    31   ~ 0
@@ -463,8 +463,6 @@ F 3 "" H 5400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5400 1600
-Wire Wire Line
-	5650 1200 5850 1200
 Text Label 6150 1200 0    50   ~ 0
 ~RESET
 $Comp
@@ -487,9 +485,6 @@ F 12 "Active" H 6050 2600 60  0001 L CNN "Status"
 	1    5850 1400
 	0    1    1    0   
 $EndComp
-Connection ~ 5850 1200
-Wire Wire Line
-	5850 1200 6150 1200
 Wire Wire Line
 	5850 1600 5400 1600
 Wire Wire Line
@@ -686,13 +681,8 @@ Wire Wire Line
 	8850 4350 9100 4350
 Wire Wire Line
 	8400 4150 8950 4150
-Connection ~ 9600 4150
-Wire Wire Line
-	9600 4150 10050 4150
 Wire Wire Line
 	8400 4950 8400 5250
-Wire Wire Line
-	8400 5250 9600 5250
 Wire Wire Line
 	9800 4650 9950 4650
 Wire Wire Line
@@ -709,8 +699,6 @@ Wire Wire Line
 	8950 4450 8950 4150
 Connection ~ 8950 4150
 Wire Wire Line
-	8950 4150 9600 4150
-Wire Wire Line
 	8950 4650 8950 4450
 Wire Wire Line
 	8950 4650 9100 4650
@@ -719,9 +707,6 @@ Wire Wire Line
 	9800 4550 10050 4550
 Text Label 10050 4550 0    50   ~ 0
 PHI2
-Wire Wire Line
-	9600 5250 10050 5250
-Connection ~ 9600 5250
 $Comp
 L power:GND #PWR014
 U 1 1 5C5147F9
@@ -818,10 +803,6 @@ Text Label 7650 2000 2    31   ~ 0
 PHI2
 Text Label 8250 2000 0    31   ~ 0
 !PHI2
-Connection ~ 7950 1500
-Connection ~ 7950 2600
-Connection ~ 9200 1050
-Connection ~ 9200 3050
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C565720
@@ -865,19 +846,112 @@ Wire Wire Line
 	3200 850  3650 850 
 Wire Wire Line
 	3200 1600 3650 1600
-Wire Bus Line
-	3050 2200 3050 3150
-Wire Bus Line
-	1550 2200 1550 3950
 $Comp
 L Riley1:74HC573 U?
 U 1 1 5C57F730
-P 5600 3350
-F 0 "U?" H 5600 4284 31  0000 C CNN
-F 1 "74HC573" H 5600 4222 31  0000 C CNN
-F 2 "" H 5600 3700 31  0001 C CNN
-F 3 "" H 5600 3700 31  0001 C CNN
-	1    5600 3350
+P 5400 3250
+F 0 "U?" H 5550 3950 47  0000 C CNN
+F 1 "74HC573" V 5400 3300 47  0000 C CNN
+F 2 "" H 5400 3600 31  0001 C CNN
+F 3 "" H 5400 3600 31  0001 C CNN
+	1    5400 3250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5650 1200 6150 1200
+Wire Wire Line
+	8950 4150 10050 4150
+Wire Wire Line
+	8400 5250 10050 5250
+$Comp
+L Riley1:CD74HC245 U?
+U 1 1 5C500719
+P 5400 5150
+F 0 "U?" H 5400 6108 31  0000 C CNN
+F 1 "CD74HC245" H 5400 6034 47  0000 C CNN
+F 2 "" H 5400 5500 31  0001 C CNN
+F 3 "" H 5400 5500 31  0001 C CNN
+	1    5400 5150
+	1    0    0    -1  
+$EndComp
+Text Label 4950 5600 2    50   ~ 0
+!PHI2
+Text Label 4950 5500 2    50   ~ 0
+RW
+Text Label 4950 5350 2    31   ~ 0
+Q7
+Text Label 4950 5250 2    31   ~ 0
+Q6
+Text Label 4950 5150 2    31   ~ 0
+Q5
+Text Label 4950 5050 2    31   ~ 0
+Q4
+Text Label 4950 4950 2    31   ~ 0
+Q3
+Text Label 4950 4850 2    31   ~ 0
+Q2
+Text Label 4950 4750 2    31   ~ 0
+Q1
+Text Label 4950 4650 2    31   ~ 0
+Q0
+Text Label 5850 4650 0    31   ~ 0
+D0
+Text Label 5850 4750 0    31   ~ 0
+D1
+Text Label 5850 4850 0    31   ~ 0
+D2
+Text Label 5850 4950 0    31   ~ 0
+D3
+Text Label 5850 5050 0    31   ~ 0
+D4
+Text Label 5850 5150 0    31   ~ 0
+D5
+Text Label 5850 5250 0    31   ~ 0
+D6
+Text Label 5850 5350 0    31   ~ 0
+D7
+Entry Wire Line
+	5850 4650 5950 4550
+Entry Wire Line
+	5850 4750 5950 4650
+Entry Wire Line
+	5850 4850 5950 4750
+Entry Wire Line
+	5850 4950 5950 4850
+Entry Wire Line
+	5850 5050 5950 4950
+Entry Wire Line
+	5850 5150 5950 5050
+Entry Wire Line
+	5850 5250 5950 5150
+Entry Wire Line
+	5850 5350 5950 5250
+Text Label 5950 4300 1    31   ~ 0
+D[0..7]
+Entry Wire Line
+	4850 5250 4950 5350
+Entry Wire Line
+	4850 5150 4950 5250
+Entry Wire Line
+	4850 5050 4950 5150
+Entry Wire Line
+	4850 4950 4950 5050
+Entry Wire Line
+	4850 4850 4950 4950
+Entry Wire Line
+	4850 4750 4950 4850
+Entry Wire Line
+	4850 4650 4950 4750
+Entry Wire Line
+	4850 4550 4950 4650
+Wire Bus Line
+	3050 2200 3050 3150
+Wire Bus Line
+	5950 4150 5950 5250
+Wire Bus Line
+	4850 4150 4850 5250
+Wire Bus Line
+	1550 2200 1550 3950
+Text Label 4850 4300 1    31   ~ 0
+Q[0..7]
 $EndSCHEMATC

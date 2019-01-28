@@ -847,10 +847,10 @@ Wire Wire Line
 Wire Wire Line
 	3200 1600 3650 1600
 $Comp
-L Riley1:74HC573 U?
+L Riley1:74HC573 U12
 U 1 1 5C57F730
 P 5400 3250
-F 0 "U?" H 5550 3950 47  0000 C CNN
+F 0 "U12" H 5550 3900 47  0000 C CNN
 F 1 "74HC573" V 5400 3300 47  0000 C CNN
 F 2 "" H 5400 3600 31  0001 C CNN
 F 3 "" H 5400 3600 31  0001 C CNN
@@ -858,100 +858,279 @@ F 3 "" H 5400 3600 31  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 1200 6150 1200
+	5650 1200 5850 1200
 Wire Wire Line
-	8950 4150 10050 4150
+	8950 4150 9600 4150
 Wire Wire Line
-	8400 5250 10050 5250
+	8400 5250 9600 5250
 $Comp
-L Riley1:CD74HC245 U?
+L Riley1:CD74HC245 U13
 U 1 1 5C500719
-P 5400 5150
-F 0 "U?" H 5400 6108 31  0000 C CNN
-F 1 "CD74HC245" H 5400 6034 47  0000 C CNN
-F 2 "" H 5400 5500 31  0001 C CNN
-F 3 "" H 5400 5500 31  0001 C CNN
-	1    5400 5150
+P 5400 5300
+F 0 "U13" H 5550 5950 47  0000 C CNN
+F 1 "CD74HC245" V 5400 5350 47  0000 C CNN
+F 2 "" H 5400 5650 31  0001 C CNN
+F 3 "" H 5400 5650 31  0001 C CNN
+	1    5400 5300
 	1    0    0    -1  
 $EndComp
-Text Label 4950 5600 2    50   ~ 0
-!PHI2
-Text Label 4950 5500 2    50   ~ 0
-RW
-Text Label 4950 5350 2    31   ~ 0
+Text Label 4950 5650 2    31   ~ 0
+R~W
+Text Label 4950 5500 2    31   ~ 0
 Q7
-Text Label 4950 5250 2    31   ~ 0
+Text Label 4950 5400 2    31   ~ 0
 Q6
-Text Label 4950 5150 2    31   ~ 0
+Text Label 4950 5300 2    31   ~ 0
 Q5
-Text Label 4950 5050 2    31   ~ 0
+Text Label 4950 5200 2    31   ~ 0
 Q4
-Text Label 4950 4950 2    31   ~ 0
+Text Label 4950 5100 2    31   ~ 0
 Q3
-Text Label 4950 4850 2    31   ~ 0
+Text Label 4950 5000 2    31   ~ 0
 Q2
-Text Label 4950 4750 2    31   ~ 0
+Text Label 4950 4900 2    31   ~ 0
 Q1
-Text Label 4950 4650 2    31   ~ 0
+Text Label 4950 4800 2    31   ~ 0
 Q0
-Text Label 5850 4650 0    31   ~ 0
+Text Label 5850 4800 0    31   ~ 0
 D0
-Text Label 5850 4750 0    31   ~ 0
+Text Label 5850 4900 0    31   ~ 0
 D1
-Text Label 5850 4850 0    31   ~ 0
+Text Label 5850 5000 0    31   ~ 0
 D2
-Text Label 5850 4950 0    31   ~ 0
+Text Label 5850 5100 0    31   ~ 0
 D3
-Text Label 5850 5050 0    31   ~ 0
+Text Label 5850 5200 0    31   ~ 0
 D4
-Text Label 5850 5150 0    31   ~ 0
+Text Label 5850 5300 0    31   ~ 0
 D5
-Text Label 5850 5250 0    31   ~ 0
+Text Label 5850 5400 0    31   ~ 0
 D6
-Text Label 5850 5350 0    31   ~ 0
+Text Label 5850 5500 0    31   ~ 0
 D7
 Entry Wire Line
-	5850 4650 5950 4550
+	5850 4800 5950 4700
 Entry Wire Line
-	5850 4750 5950 4650
+	5850 4900 5950 4800
 Entry Wire Line
-	5850 4850 5950 4750
+	5850 5000 5950 4900
 Entry Wire Line
-	5850 4950 5950 4850
+	5850 5100 5950 5000
 Entry Wire Line
-	5850 5050 5950 4950
+	5850 5200 5950 5100
 Entry Wire Line
-	5850 5150 5950 5050
+	5850 5300 5950 5200
 Entry Wire Line
-	5850 5250 5950 5150
+	5850 5400 5950 5300
 Entry Wire Line
-	5850 5350 5950 5250
-Text Label 5950 4300 1    31   ~ 0
+	5850 5500 5950 5400
+Text Label 5950 4450 1    31   ~ 0
 D[0..7]
 Entry Wire Line
-	4850 5250 4950 5350
+	4850 5400 4950 5500
 Entry Wire Line
-	4850 5150 4950 5250
+	4850 5300 4950 5400
 Entry Wire Line
-	4850 5050 4950 5150
+	4850 5200 4950 5300
 Entry Wire Line
-	4850 4950 4950 5050
+	4850 5100 4950 5200
 Entry Wire Line
-	4850 4850 4950 4950
+	4850 5000 4950 5100
 Entry Wire Line
-	4850 4750 4950 4850
+	4850 4900 4950 5000
 Entry Wire Line
-	4850 4650 4950 4750
+	4850 4800 4950 4900
 Entry Wire Line
-	4850 4550 4950 4650
+	4850 4700 4950 4800
+Text Label 4850 2500 1    31   ~ 0
+Q[0..7]
+Entry Wire Line
+	4850 3350 4950 3450
+Entry Wire Line
+	4850 3250 4950 3350
+Entry Wire Line
+	4850 3150 4950 3250
+Entry Wire Line
+	4850 3050 4950 3150
+Entry Wire Line
+	4850 2950 4950 3050
+Entry Wire Line
+	4850 2850 4950 2950
+Entry Wire Line
+	4850 2750 4950 2850
+Entry Wire Line
+	4850 2650 4950 2750
+Text Label 4950 2750 2    31   ~ 0
+Q0
+Text Label 4950 2850 2    31   ~ 0
+Q1
+Text Label 4950 2950 2    31   ~ 0
+Q2
+Text Label 4950 3050 2    31   ~ 0
+Q3
+Text Label 4950 3150 2    31   ~ 0
+Q4
+Text Label 4950 3250 2    31   ~ 0
+Q5
+Text Label 4950 3350 2    31   ~ 0
+Q6
+Text Label 4950 3450 2    31   ~ 0
+Q7
+Wire Wire Line
+	4950 3600 4550 3600
+Wire Wire Line
+	4550 5750 4950 5750
+Wire Wire Line
+	4550 5750 4350 5750
+Connection ~ 4550 5750
+Text Label 4350 5750 0    31   ~ 0
+!PHI2
+Wire Wire Line
+	4950 3700 4700 3700
+Wire Wire Line
+	4700 3700 4700 4000
+Wire Wire Line
+	4700 4000 5400 4000
+$Comp
+L power:GND #PWR0108
+U 1 1 5C507096
+P 5400 4000
+F 0 "#PWR0108" H 5400 3750 50  0001 C CNN
+F 1 "GND" H 5405 3827 50  0000 C CNN
+F 2 "" H 5400 4000 50  0001 C CNN
+F 3 "" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 4000
+$Comp
+L power:GND #PWR0113
+U 1 1 5C5070FD
+P 5400 6050
+F 0 "#PWR0113" H 5400 5800 50  0001 C CNN
+F 1 "GND" H 5405 5877 50  0000 C CNN
+F 2 "" H 5400 6050 50  0001 C CNN
+F 3 "" H 5400 6050 50  0001 C CNN
+	1    5400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 5C507502
+P 5400 4500
+F 0 "#PWR0114" H 5400 4350 50  0001 C CNN
+F 1 "VCC" H 5417 4673 50  0000 C CNN
+F 2 "" H 5400 4500 50  0001 C CNN
+F 3 "" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 5C507804
+P 5400 2450
+F 0 "#PWR0115" H 5400 2300 50  0001 C CNN
+F 1 "VCC" H 5417 2623 50  0000 C CNN
+F 2 "" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3600 4550 5750
+Entry Wire Line
+	5850 2750 5950 2650
+Entry Wire Line
+	5850 2850 5950 2750
+Entry Wire Line
+	5850 2950 5950 2850
+Entry Wire Line
+	5850 3050 5950 2950
+Entry Wire Line
+	5850 3150 5950 3050
+Entry Wire Line
+	5850 3250 5950 3150
+Entry Wire Line
+	5850 3350 5950 3250
+Entry Wire Line
+	5850 3450 5950 3350
+Text Label 5850 2750 0    31   ~ 0
+A16
+Text Label 5850 2850 0    31   ~ 0
+A17
+Text Label 5850 2950 0    31   ~ 0
+A18
+Text Label 5850 3050 0    31   ~ 0
+A19
+Text Label 5850 3150 0    31   ~ 0
+A20
+Text Label 5850 3250 0    31   ~ 0
+A21
+Text Label 5850 3350 0    31   ~ 0
+A22
+Text Label 5850 3450 0    31   ~ 0
+A23
+Text Label 5950 2550 1    31   ~ 0
+A[0..23]
+$Comp
+L Device:C C11
+U 1 1 5C513AC0
+P 4250 3150
+F 0 "C11" H 4365 3196 50  0000 L CNN
+F 1 "0.1uF" H 4365 3105 50  0000 L CNN
+F 2 "" H 4288 3000 50  0001 C CNN
+F 3 "~" H 4250 3150 50  0001 C CNN
+	1    4250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2450 4250 2450
+Wire Wire Line
+	4250 2450 4250 3000
+Connection ~ 5400 2450
+Wire Wire Line
+	4250 3300 4250 4000
+Wire Wire Line
+	4250 4000 4700 4000
+Connection ~ 4700 4000
+$Comp
+L Device:C C12
+U 1 1 5C519EA1
+P 4250 5100
+F 0 "C12" H 4365 5146 50  0000 L CNN
+F 1 "0.1uF" H 4365 5055 50  0000 L CNN
+F 2 "" H 4288 4950 50  0001 C CNN
+F 3 "~" H 4250 5100 50  0001 C CNN
+	1    4250 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4500 4250 4500
+Wire Wire Line
+	4250 4500 4250 4950
+Connection ~ 5400 4500
+Wire Wire Line
+	4250 5250 4250 6050
+Wire Wire Line
+	4250 6050 5400 6050
+Connection ~ 5400 6050
 Wire Bus Line
 	3050 2200 3050 3150
 Wire Bus Line
-	5950 4150 5950 5250
+	5950 4300 5950 5400
 Wire Bus Line
-	4850 4150 4850 5250
+	5950 2350 5950 3350
 Wire Bus Line
 	1550 2200 1550 3950
-Text Label 4850 4300 1    31   ~ 0
-Q[0..7]
+Wire Bus Line
+	4850 2350 4850 5400
+Connection ~ 9600 4150
+Wire Wire Line
+	9600 4150 10050 4150
+Connection ~ 9600 5250
+Wire Wire Line
+	9600 5250 10050 5250
+Connection ~ 5850 1200
+Wire Wire Line
+	5850 1200 6150 1200
 $EndSCHEMATC

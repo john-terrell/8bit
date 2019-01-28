@@ -128,12 +128,12 @@ D[0..7]
 $Comp
 L power:GND #PWR04
 U 1 1 5C4DA897
-P 4000 4900
-F 0 "#PWR04" H 4000 4650 50  0001 C CNN
-F 1 "GND" H 4005 4727 50  0000 C CNN
-F 2 "" H 4000 4900 50  0001 C CNN
-F 3 "" H 4000 4900 50  0001 C CNN
-	1    4000 4900
+P 4000 4950
+F 0 "#PWR04" H 4000 4700 50  0001 C CNN
+F 1 "GND" H 4005 4777 50  0000 C CNN
+F 2 "" H 4000 4950 50  0001 C CNN
+F 3 "" H 4000 4950 50  0001 C CNN
+	1    4000 4950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -165,8 +165,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 2400 2900 3600
 Connection ~ 4000 2400
-Wire Wire Line
-	2900 3900 2900 4900
 Connection ~ 4000 2650
 Wire Wire Line
 	4000 2650 4000 2700
@@ -237,8 +235,6 @@ Entry Wire Line
 	6800 2750 6900 2850
 Text Label 6800 2650 1    31   ~ 0
 A[0..23]
-Wire Wire Line
-	2900 4900 4000 4900
 Entry Wire Line
 	3450 4400 3550 4500
 Entry Wire Line
@@ -294,7 +290,7 @@ Wire Wire Line
 Connection ~ 7400 2400
 Text Notes 7300 5250 0    79   ~ 0
 RAM
-Text Notes 3900 5250 0    79   ~ 0
+Text Notes 3900 5350 0    79   ~ 0
 ROM
 Text Label 7900 2850 0    31   ~ 0
 D0
@@ -390,6 +386,10 @@ Text HLabel 7900 4450 2    47   Input ~ 0
 ~RAM_SEL
 Text HLabel 7900 4550 2    47   Input ~ 0
 ~RAM_SEL
+Wire Wire Line
+	2900 4950 4000 4950
+Wire Wire Line
+	2900 3900 2900 4950
 Wire Bus Line
 	8000 2450 8000 3450
 Wire Bus Line
@@ -398,4 +398,5 @@ Wire Bus Line
 	6800 2450 6800 4550
 Wire Bus Line
 	3450 2500 3450 4400
+Connection ~ 4000 4950
 $EndSCHEMATC

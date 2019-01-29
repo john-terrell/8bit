@@ -415,8 +415,13 @@ S 4650 6500 700  800
 U 5C4E8467
 F0 "Devices" 50
 F1 "devices.sch" 50
-F2 "~IOSEL" I L 4650 6850 50 
+F2 "~IO_SEL" I L 4650 7100 50 
 F3 "A[0..23]" I L 4650 6600 50 
+F4 "~IRQ" O R 5350 7150 50 
+F5 "PHI2" I L 4650 7250 50 
+F6 "D[0..7]" B L 4650 6750 50 
+F7 "~RESET" I L 4650 6950 50 
+F8 "R~W" I R 5350 6600 50 
 $EndSheet
 $Comp
 L Riley1:DS1813 U9
@@ -1043,8 +1048,6 @@ Entry Wire Line
 Entry Wire Line
 	5850 2950 5950 2850
 Entry Wire Line
-	5850 3050 5950 2950
-Entry Wire Line
 	5850 3150 5950 3050
 Entry Wire Line
 	5850 3250 5950 3150
@@ -1058,8 +1061,6 @@ Text Label 5850 2850 0    31   ~ 0
 A17
 Text Label 5850 2950 0    31   ~ 0
 A18
-Text Label 5850 3050 0    31   ~ 0
-A19
 Text Label 5850 3150 0    31   ~ 0
 A20
 Text Label 5850 3250 0    31   ~ 0
@@ -1125,23 +1126,46 @@ Text Notes 5650 4100 0    50   ~ 0
 Bank Address Latch Circuit\n
 NoConn ~ 2950 3550
 Wire Wire Line
-	4150 6750 4150 6850
-Wire Wire Line
-	4150 6850 4650 6850
-Wire Wire Line
 	3450 6750 4150 6750
 Wire Bus Line
 	4350 6600 4650 6600
+Text Label 4350 6600 0    47   ~ 0
+A[0..23]
+NoConn ~ 5850 3050
+Text Notes 6000 3000 0    31   ~ 0
+NOTE: A19 isn't used in this schematic so this is left unconnected.
+Wire Wire Line
+	5350 7150 5650 7150
+Text Label 5650 7150 2    50   ~ 0
+~IRQ
+Wire Wire Line
+	4350 7250 4650 7250
+Text Label 4350 7250 0    50   ~ 0
+PHI2
+Wire Wire Line
+	4150 7100 4650 7100
+Wire Wire Line
+	4150 6750 4150 7100
+Wire Bus Line
+	4350 6750 4650 6750
+Text Label 4350 6750 0    50   ~ 0
+D[0..7]
+Wire Wire Line
+	4350 6950 4650 6950
+Text Label 4350 6950 0    50   ~ 0
+~RESET
+Wire Wire Line
+	5350 6600 5650 6600
+Wire Bus Line
+	5950 2350 5950 3350
 Wire Bus Line
 	3050 2200 3050 3150
 Wire Bus Line
 	5950 4300 5950 5400
 Wire Bus Line
-	5950 2350 5950 3350
-Wire Bus Line
 	1550 2200 1550 3950
 Wire Bus Line
 	4850 2350 4850 5400
-Text Label 4350 6600 0    47   ~ 0
-A[0..23]
+Text Label 5650 6600 2    47   ~ 0
+R~W
 $EndSCHEMATC

@@ -1156,6 +1156,8 @@ Text Label 4350 6950 0    50   ~ 0
 ~RESET
 Wire Wire Line
 	5350 6600 5650 6600
+Text Label 5650 6600 2    47   ~ 0
+R~W
 Wire Bus Line
 	5950 2350 5950 3350
 Wire Bus Line
@@ -1166,6 +1168,4 @@ Wire Bus Line
 	1550 2200 1550 3950
 Wire Bus Line
 	4850 2350 4850 5400
-Text Label 5650 6600 2    47   ~ 0
-R~W
 $EndSCHEMATC

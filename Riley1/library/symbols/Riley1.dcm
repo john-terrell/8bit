@@ -28,4 +28,18 @@ D 3 line to 8-line decoders demultiplexers
 F http://www.ti.com/lit/gpn/sn74hc138
 $ENDCMP
 #
+$CMP SN74HC245
+D Octal Bus TransceiversWith 3-StateOutputs
+F http://www.ti.com/lit/ds/symlink/sn74hc245.pdf
+$ENDCMP
+#
+$CMP SN74HC573AN
+F http://www.ti.com/lit/ds/symlink/sn74hc573a.pdf
+$ENDCMP
+#
+$CMP WD65C816S_-65xx
+D WD65C816S 8Bit Microprocessor
+F https://www.westerndesigncenter.com/wdc/documentation/w65c816s.pdf
+$ENDCMP
+#
 #End Doc Library

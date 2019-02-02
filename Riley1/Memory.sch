@@ -156,7 +156,7 @@ P 2900 3750
 F 0 "C5" H 3015 3796 50  0000 L CNN
 F 1 "0.1uF" H 3015 3705 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2938 3600 50  0001 C CNN
-F 3 "~" H 2900 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 2900 3750 50  0001 C CNN
 	1    2900 3750
 	1    0    0    -1  
 $EndComp
@@ -250,7 +250,7 @@ P 6300 3750
 F 0 "C7" H 6415 3796 50  0000 L CNN
 F 1 "0.1uF" H 6415 3705 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6338 3600 50  0001 C CNN
-F 3 "~" H 6300 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 6300 3750 50  0001 C CNN
 	1    6300 3750
 	1    0    0    -1  
 $EndComp

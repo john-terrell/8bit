@@ -124,7 +124,7 @@ AR Path="/5C4E8467/5C52200D" Ref="C16"  Part="1"
 F 0 "C16" H 5865 2346 50  0000 L CNN
 F 1 "0.1uF" H 5865 2255 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5788 2150 50  0001 C CNN
-F 3 "~" H 5750 2300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 5750 2300 50  0001 C CNN
 	1    5750 2300
 	1    0    0    -1  
 $EndComp
@@ -163,8 +163,6 @@ Text Label 1900 1600 2    50   ~ 0
 A9
 Text Label 1900 1700 2    50   ~ 0
 A10
-Text Label 1900 2200 2    50   ~ 0
-A11
 $Comp
 L Device:C C?
 U 1 1 5C527C29
@@ -172,17 +170,15 @@ P 1350 1750
 AR Path="/5C4D9B3D/5C527C29" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C527C29" Ref="C?"  Part="1" 
 AR Path="/5C4E8467/5C527C29" Ref="C13"  Part="1" 
-F 0 "C13" H 1465 1796 50  0000 L CNN
-F 1 "0.1uF" H 1465 1705 50  0000 L CNN
+F 0 "C13" H 1200 1850 50  0000 L CNN
+F 1 "0.1uF" H 1150 1650 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1388 1600 50  0001 C CNN
-F 3 "~" H 1350 1750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1350 1750 50  0001 C CNN
 	1    1350 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 1200 1350 1200
-Wire Wire Line
-	1350 2500 1550 2500
+	2450 1200 1600 1200
 $Comp
 L power:VCC #PWR?
 U 1 1 5C527C32
@@ -213,9 +209,6 @@ F 3 "" H 2450 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2450 2500
-Connection ~ 1550 2500
-Wire Wire Line
-	1550 2500 2450 2500
 Wire Wire Line
 	1350 1200 1350 1600
 Wire Wire Line
@@ -226,14 +219,6 @@ Entry Wire Line
 	1800 1500 1900 1600
 Entry Wire Line
 	1800 1400 1900 1500
-Entry Wire Line
-	1800 2100 1900 2200
-Wire Wire Line
-	1900 2100 1900 2050
-Wire Wire Line
-	1900 2050 1550 2050
-Wire Wire Line
-	1550 2050 1550 2500
 Text HLabel 1800 950  0    47   Input ~ 0
 A[0..23]
 Text HLabel 1150 2000 0    47   Input ~ 0
@@ -242,7 +227,6 @@ Wire Wire Line
 	1900 2000 1150 2000
 Text Label 3000 1500 0    31   ~ 0
 ~000_SEL
-NoConn ~ 3000 1600
 NoConn ~ 3000 1700
 NoConn ~ 3000 1800
 NoConn ~ 3000 1900
@@ -252,23 +236,23 @@ NoConn ~ 3000 2200
 $Comp
 L 74xx:74HC02 U17
 U 5 1 5C52D069
-P 4900 5350
-F 0 "U17" H 5050 5250 50  0000 L CNN
-F 1 "74HC02" H 4550 5700 50  0000 L CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 4900 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 4900 5350 50  0001 C CNN
-	5    4900 5350
+P 4750 1750
+F 0 "U17" H 4900 1650 50  0000 L CNN
+F 1 "74HC02" H 4400 2100 50  0000 L CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4750 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 4750 1750 50  0001 C CNN
+	5    4750 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC02 U17
 U 1 1 5C52D0C9
-P 4900 5350
-F 0 "U17" H 5050 5700 50  0000 C CNN
-F 1 "74HC02" H 4700 5700 50  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 4900 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 4900 5350 50  0001 C CNN
-	1    4900 5350
+P 4750 1750
+F 0 "U17" H 4900 2100 50  0000 C CNN
+F 1 "74HC02" H 4550 2100 50  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4750 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 4750 1750 50  0001 C CNN
+	1    4750 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -296,8 +280,6 @@ Text Label 1900 3850 2    50   ~ 0
 A5
 Text Label 1900 3950 2    50   ~ 0
 A6
-Text Label 1900 4450 2    50   ~ 0
-A7
 $Comp
 L Device:C C?
 U 1 1 5C52D77A
@@ -305,17 +287,15 @@ P 1350 4000
 AR Path="/5C4D9B3D/5C52D77A" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C52D77A" Ref="C?"  Part="1" 
 AR Path="/5C4E8467/5C52D77A" Ref="C14"  Part="1" 
-F 0 "C14" H 1465 4046 50  0000 L CNN
-F 1 "0.1uF" H 1465 3955 50  0000 L CNN
+F 0 "C14" H 1200 4100 50  0000 L CNN
+F 1 "0.1uF" H 1150 3900 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1388 3850 50  0001 C CNN
-F 3 "~" H 1350 4000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1350 4000 50  0001 C CNN
 	1    1350 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 3450 1350 3450
-Wire Wire Line
-	1350 4750 1550 4750
+	2450 3450 1600 3450
 $Comp
 L power:VCC #PWR?
 U 1 1 5C52D783
@@ -346,9 +326,6 @@ F 3 "" H 2450 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2450 4750
-Connection ~ 1550 4750
-Wire Wire Line
-	1550 4750 2450 4750
 Wire Wire Line
 	1350 3450 1350 3850
 Wire Wire Line
@@ -359,14 +336,6 @@ Entry Wire Line
 	1800 3750 1900 3850
 Entry Wire Line
 	1800 3650 1900 3750
-Entry Wire Line
-	1800 4350 1900 4450
-Wire Wire Line
-	1900 4350 1900 4300
-Wire Wire Line
-	1900 4300 1550 4300
-Wire Wire Line
-	1550 4300 1550 4750
 Text HLabel 1800 3200 0    47   Input ~ 0
 A[0..23]
 Text HLabel 1150 4250 0    47   Input ~ 0
@@ -375,72 +344,70 @@ Wire Wire Line
 	1900 4250 1150 4250
 Text Label 3000 3750 0    31   ~ 0
 ~00_SEL
-NoConn ~ 3000 3850
 NoConn ~ 3000 3950
 NoConn ~ 3000 4050
 NoConn ~ 3000 4150
 NoConn ~ 3000 4250
 NoConn ~ 3000 4350
-NoConn ~ 3000 4450
 Text Notes 1950 5250 0    98   ~ 0
 $00x0 Decoder
 Text Notes 1900 2950 0    98   ~ 0
 $0x00 Decoder
-Text Label 4600 5250 2    31   ~ 0
+Text Label 4450 1650 2    31   ~ 0
 ~000_SEL
-Text Label 4600 5450 2    31   ~ 0
+Text Label 4450 1850 2    31   ~ 0
 ~00_SEL
-Text Label 5200 5350 0    31   ~ 0
+Text Label 5050 1750 0    31   ~ 0
 ~ACIA0_SEL
 Text Label 6700 1750 2    31   ~ 0
 ~ACIA0_SEL
 $Comp
 L Device:C C?
 U 1 1 5C52FF28
-P 4100 5300
+P 3950 1700
 AR Path="/5C4D9B3D/5C52FF28" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C52FF28" Ref="C?"  Part="1" 
 AR Path="/5C4E8467/5C52FF28" Ref="C15"  Part="1" 
-F 0 "C15" H 4215 5346 50  0000 L CNN
-F 1 "0.1uF" H 4215 5255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4138 5150 50  0001 C CNN
-F 3 "~" H 4100 5300 50  0001 C CNN
-	1    4100 5300
+F 0 "C15" H 4065 1746 50  0000 L CNN
+F 1 "0.1uF" H 4065 1655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3988 1550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 3950 1700 50  0001 C CNN
+	1    3950 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 4850 4100 4850
+	4750 1250 3950 1250
 Wire Wire Line
-	4100 4850 4100 5150
+	3950 1250 3950 1550
 Wire Wire Line
-	4100 5450 4100 5850
+	3950 1850 3950 2250
 Wire Wire Line
-	4100 5850 4900 5850
+	3950 2250 4750 2250
 $Comp
 L power:VCC #PWR011
 U 1 1 5C53143E
-P 4900 4850
-F 0 "#PWR011" H 4900 4700 50  0001 C CNN
-F 1 "VCC" H 4917 5023 50  0000 C CNN
-F 2 "" H 4900 4850 50  0001 C CNN
-F 3 "" H 4900 4850 50  0001 C CNN
-	1    4900 4850
+P 4750 1250
+F 0 "#PWR011" H 4750 1100 50  0001 C CNN
+F 1 "VCC" H 4767 1423 50  0000 C CNN
+F 2 "" H 4750 1250 50  0001 C CNN
+F 3 "" H 4750 1250 50  0001 C CNN
+	1    4750 1250
 	1    0    0    -1  
 $EndComp
-Connection ~ 4900 4850
+Connection ~ 4750 1250
 $Comp
 L power:GND #PWR015
 U 1 1 5C53148E
-P 4900 5850
-F 0 "#PWR015" H 4900 5600 50  0001 C CNN
-F 1 "GND" H 4905 5677 50  0000 C CNN
-F 2 "" H 4900 5850 50  0001 C CNN
-F 3 "" H 4900 5850 50  0001 C CNN
-	1    4900 5850
+P 4750 2250
+F 0 "#PWR015" H 4750 2000 50  0001 C CNN
+F 1 "GND" H 4755 2077 50  0000 C CNN
+F 2 "" H 4750 2250 50  0001 C CNN
+F 3 "" H 4750 2250 50  0001 C CNN
+	1    4750 2250
 	1    0    0    -1  
 $EndComp
-Connection ~ 4900 5850
-Text Notes 4250 6200 0    79   ~ 0
+Connection ~ 4750 2250
+Text Notes 4100 2600 0    79   ~ 0
 ACIA0 Decoder\n
 Text Notes 7050 3600 0    79   ~ 0
 ACIA0\n
@@ -465,7 +432,7 @@ AR Path="/5C4E8467/5C537717" Ref="C17"  Part="1"
 F 0 "C17" H 6115 4596 50  0000 L CNN
 F 1 "0.1uF" H 6115 4505 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6038 4400 50  0001 C CNN
-F 3 "~" H 6000 4550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 6000 4550 50  0001 C CNN
 	1    6000 4550
 	1    0    0    -1  
 $EndComp
@@ -606,7 +573,7 @@ AR Path="/5C4E8467/5C5AADA8" Ref="C19"  Part="1"
 F 0 "C19" H 10015 3746 50  0000 L CNN
 F 1 "0.1uF" H 10015 3655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9938 3550 50  0001 C CNN
-F 3 "~" H 9900 3700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 9900 3700 50  0001 C CNN
 	1    9900 3700
 	1    0    0    -1  
 $EndComp
@@ -652,7 +619,7 @@ AR Path="/5C4E8467/5C5B21F9" Ref="C18"  Part="1"
 F 0 "C18" H 9565 3846 50  0000 L CNN
 F 1 "0.1uF" H 9565 3755 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9488 3650 50  0001 C CNN
-F 3 "~" H 9450 3800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 9450 3800 50  0001 C CNN
 	1    9450 3800
 	1    0    0    -1  
 $EndComp
@@ -663,12 +630,150 @@ Wire Wire Line
 Connection ~ 9450 4150
 Wire Wire Line
 	9450 4150 9900 4150
+$Comp
+L 74xx:74HC02 U?
+U 5 1 5C567F5D
+P 4750 3800
+F 0 "U?" H 4900 3700 50  0000 L CNN
+F 1 "74HC02" H 4400 4150 50  0000 L CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4750 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 4750 3800 50  0001 C CNN
+	5    4750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC02 U?
+U 1 1 5C567F64
+P 4750 3800
+F 0 "U?" H 4900 4150 50  0000 C CNN
+F 1 "74HC02" H 4550 4150 50  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4750 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 4750 3800 50  0001 C CNN
+	1    4750 3800
+	1    0    0    -1  
+$EndComp
+Text Label 4450 3700 2    31   ~ 0
+~000_SEL
+Text Label 4450 3900 2    31   ~ 0
+~00_SEL
+Text Label 5050 3800 0    31   ~ 0
+~ACIA0_SEL
+$Comp
+L Device:C C?
+U 1 1 5C567F6E
+P 3950 3750
+AR Path="/5C4D9B3D/5C567F6E" Ref="C?"  Part="1" 
+AR Path="/5C53C6C8/5C567F6E" Ref="C?"  Part="1" 
+AR Path="/5C4E8467/5C567F6E" Ref="C?"  Part="1" 
+F 0 "C?" H 4065 3796 50  0000 L CNN
+F 1 "0.1uF" H 4065 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3988 3600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 3950 3750 50  0001 C CNN
+	1    3950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3300 3950 3300
+Wire Wire Line
+	3950 3300 3950 3600
+Wire Wire Line
+	3950 3900 3950 4300
+Wire Wire Line
+	3950 4300 4750 4300
+$Comp
+L power:VCC #PWR?
+U 1 1 5C567F79
+P 4750 3300
+F 0 "#PWR?" H 4750 3150 50  0001 C CNN
+F 1 "VCC" H 4767 3473 50  0000 C CNN
+F 2 "" H 4750 3300 50  0001 C CNN
+F 3 "" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5C567F80
+P 4750 4300
+F 0 "#PWR?" H 4750 4050 50  0001 C CNN
+F 1 "GND" H 4755 4127 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 4300
+Text Notes 4100 4650 0    79   ~ 0
+VIA0 Decoder\n
+NoConn ~ 3000 1600
+Wire Wire Line
+	1350 4750 1550 4750
+Wire Wire Line
+	1900 4350 1550 4350
+Wire Wire Line
+	1550 4350 1550 4750
+Connection ~ 1550 4750
+Wire Wire Line
+	1550 4750 2450 4750
+Wire Wire Line
+	1900 4450 1600 4450
+Wire Wire Line
+	1600 4450 1600 3900
+$Comp
+L Device:R R?
+U 1 1 5C571754
+P 1600 3750
+F 0 "R?" H 1600 3900 50  0000 L CNN
+F 1 "3K3" V 1500 3650 50  0000 L CNN
+F 2 "" V 1530 3750 50  0001 C CNN
+F 3 "~" H 1600 3750 50  0001 C CNN
+	1    1600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3600 1600 3450
+Connection ~ 1600 3450
+Wire Wire Line
+	1600 3450 1350 3450
+Wire Wire Line
+	1350 2500 1550 2500
+Wire Wire Line
+	1900 2100 1550 2100
+Wire Wire Line
+	1550 2100 1550 2500
+Connection ~ 1550 2500
+Wire Wire Line
+	1550 2500 2450 2500
+$Comp
+L Device:R R?
+U 1 1 5C575513
+P 1600 1450
+F 0 "R?" H 1600 1600 50  0000 L CNN
+F 1 "3K3" V 1500 1350 50  0000 L CNN
+F 2 "" V 1530 1450 50  0001 C CNN
+F 3 "~" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2200 1600 2200
+Wire Wire Line
+	1600 2200 1600 1600
+Wire Wire Line
+	1600 1300 1600 1200
+Connection ~ 1600 1200
+Wire Wire Line
+	1600 1200 1350 1200
+NoConn ~ 3000 4450
 Wire Bus Line
 	7800 1300 7800 1750
 Wire Bus Line
-	1800 950  1800 2100
+	1800 950  1800 1600
 Wire Bus Line
-	1800 3200 1800 4350
+	1800 3200 1800 3850
 Wire Bus Line
 	8400 1300 8400 2650
+Text Label 3000 3850 0    31   ~ 0
+~10_SEL
 $EndSCHEMATC

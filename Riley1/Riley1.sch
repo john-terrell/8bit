@@ -26,13 +26,13 @@ F 3 "" H 1800 2450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Device:C C10
 U 1 1 5C4A3FB0
 P 1050 3400
-F 0 "C1" H 1165 3446 50  0000 L CNN
+F 0 "C10" H 1165 3446 50  0000 L CNN
 F 1 "0.1uF" H 1165 3355 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1088 3250 50  0001 C CNN
-F 3 "~" H 1050 3400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1050 3400 50  0001 C CNN
 	1    1050 3400
 	1    0    0    -1  
 $EndComp
@@ -117,10 +117,10 @@ Wire Wire Line
 Wire Wire Line
 	8550 1550 8900 1550
 $Comp
-L Device:R R1
+L Device:R R5
 U 1 1 5C4A57DC
 P 1250 4400
-F 0 "R1" V 1150 4400 50  0000 C CNN
+F 0 "R5" V 1150 4400 50  0000 C CNN
 F 1 "3K3" V 1350 4400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 1180 4400 50  0001 C CNN
 F 3 "~" H 1250 4400 50  0001 C CNN
@@ -148,13 +148,13 @@ F 3 "~" H 3350 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C11
 U 1 1 5C4A732C
 P 7100 1950
-F 0 "C2" H 7215 1996 50  0000 L CNN
+F 0 "C11" H 7215 1996 50  0000 L CNN
 F 1 "0.1uF" H 7215 1905 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7138 1800 50  0001 C CNN
-F 3 "~" H 7100 1950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 7100 1950 50  0001 C CNN
 	1    7100 1950
 	1    0    0    -1  
 $EndComp
@@ -217,7 +217,7 @@ P 9900 2000
 F 0 "C3" H 10015 2046 50  0000 L CNN
 F 1 "0.1uF" H 10015 1955 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9938 1850 50  0001 C CNN
-F 3 "~" H 9900 2000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 9900 2000 50  0001 C CNN
 	1    9900 2000
 	1    0    0    -1  
 $EndComp
@@ -441,7 +441,7 @@ P 4750 1200
 F 0 "C8" H 4865 1246 50  0000 L CNN
 F 1 "0.1uF" H 4865 1155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4788 1050 50  0001 C CNN
-F 3 "~" H 4750 1200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4750 1200 50  0001 C CNN
 	1    4750 1200
 	1    0    0    -1  
 $EndComp
@@ -509,16 +509,16 @@ U 1 1 5C4ED7F9
 P 3650 1450
 F 0 "D1" V 3688 1333 50  0000 R CNN
 F 1 "LED" V 3597 1333 50  0000 R CNN
-F 2 "" H 3650 1450 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 3650 1450 50  0001 C CNN
 F 3 "~" H 3650 1450 50  0001 C CNN
 	1    3650 1450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R1
 U 1 1 5C4EEEAC
 P 3650 1100
-F 0 "R5" H 3720 1146 50  0000 L CNN
+F 0 "R1" H 3720 1146 50  0000 L CNN
 F 1 "150 Ohm" H 3720 1055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3580 1100 50  0001 C CNN
 F 3 "~" H 3650 1100 50  0001 C CNN
@@ -559,24 +559,24 @@ F 3 "" H 4050 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C9
+L Device:CP1 C1
 U 1 1 5C4F0942
 P 2250 1100
-F 0 "C9" H 2365 1146 50  0000 L CNN
+F 0 "C1" H 2365 1146 50  0000 L CNN
 F 1 "10uF" H 2365 1055 50  0000 L CNN
-F 2 "" H 2250 1100 50  0001 C CNN
-F 3 "~" H 2250 1100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2250 1100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 2250 1100 50  0001 C CNN
 	1    2250 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C10
+L Device:CP1 C2
 U 1 1 5C4F09C4
 P 3200 1100
-F 0 "C10" H 3315 1146 50  0000 L CNN
+F 0 "C2" H 3315 1146 50  0000 L CNN
 F 1 "1uF" H 3315 1055 50  0000 L CNN
-F 2 "" H 3200 1100 50  0001 C CNN
-F 3 "~" H 3200 1100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3200 1100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 3200 1100 50  0001 C CNN
 	1    3200 1100
 	1    0    0    -1  
 $EndComp
@@ -631,8 +631,8 @@ U 1 1 5C4FFA2C
 P 1850 850
 F 0 "F1" V 1653 850 50  0000 C CNN
 F 1 "Fuse" V 1744 850 50  0000 C CNN
-F 2 "" V 1780 850 50  0001 C CNN
-F 3 "~" H 1850 850 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031-8002_Horizontal_Open" V 1780 850 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/schurter-inc/0031.8002/486-3643-ND/640587" H 1850 850 50  0001 C CNN
 	1    1850 850 
 	0    1    1    0   
 $EndComp
@@ -1072,13 +1072,13 @@ A23
 Text Label 5950 2550 1    31   ~ 0
 A[0..23]
 $Comp
-L Device:C C11
+L Device:C C21
 U 1 1 5C513AC0
 P 4250 3150
-F 0 "C11" H 4365 3196 50  0000 L CNN
+F 0 "C21" H 4365 3196 50  0000 L CNN
 F 1 "0.1uF" H 4365 3105 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 3000 50  0001 C CNN
-F 3 "~" H 4250 3150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 3150 50  0001 C CNN
 	1    4250 3150
 	1    0    0    -1  
 $EndComp
@@ -1099,7 +1099,7 @@ P 4250 5100
 F 0 "C12" H 4365 5146 50  0000 L CNN
 F 1 "0.1uF" H 4365 5055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 4950 50  0001 C CNN
-F 3 "~" H 4250 5100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 5100 50  0001 C CNN
 	1    4250 5100
 	1    0    0    -1  
 $EndComp

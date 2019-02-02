@@ -53,7 +53,7 @@ AR Path="/5C4D9B3D/5C53CFC1" Ref="C?"  Part="1"
 AR Path="/5C53C6C8/5C53CFC1" Ref="C4"  Part="1" 
 F 0 "C4" H 3765 3096 50  0000 L CNN
 F 1 "0.1uF" H 3765 3005 50  0000 L CNN
-F 2 "" H 3688 2900 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3688 2900 50  0001 C CNN
 F 3 "~" H 3650 3050 50  0001 C CNN
 	1    3650 3050
 	1    0    0    -1  
@@ -90,7 +90,7 @@ F 3 "" H 4750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4750 3800
-Text Notes 5150 4950 0    47   ~ 0
+Text Notes 3350 5200 0    47   ~ 0
 ROM/IO Decoder\n\nROM: $F0E000-$F0FFFF (Native Mode)\nIO: $F0D000-$F0DXXX (Native Mode)\n\nROM: $E000-$FFFF (Emulation Mode)\nIO: $D000-$DXXX (Emulation Mode)\n
 NoConn ~ 5300 3300
 NoConn ~ 5300 3400
@@ -133,7 +133,7 @@ AR Path="/5C4D9B3D/5C53CFF1" Ref="C?"  Part="1"
 AR Path="/5C53C6C8/5C53CFF1" Ref="C6"  Part="1" 
 F 0 "C6" H 6065 3096 50  0000 L CNN
 F 1 "0.1uF" H 6065 3005 50  0000 L CNN
-F 2 "" H 5988 2900 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5988 2900 50  0001 C CNN
 F 3 "~" H 5950 3050 50  0001 C CNN
 	1    5950 3050
 	1    0    0    -1  
@@ -190,19 +190,6 @@ Wire Wire Line
 	5300 3500 5300 4100
 Wire Wire Line
 	5300 4100 5500 4100
-$Comp
-L 4xxx:4077 U?
-U 1 1 5C53D017
-P 5800 4200
-AR Path="/5C4D9B3D/5C53D017" Ref="U?"  Part="1" 
-AR Path="/5C53C6C8/5C53D017" Ref="U6"  Part="1" 
-F 0 "U6" H 5800 4525 50  0000 C CNN
-F 1 "4077" H 5800 4434 50  0000 C CNN
-F 2 "" H 5800 4200 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 5800 4200 50  0001 C CNN
-	1    5800 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 2500 3650 2900
 Wire Wire Line
@@ -251,8 +238,73 @@ Text HLabel 7700 3400 2    47   Output ~ 0
 ~E000_SEL
 Text HLabel 7700 3500 2    47   Output ~ 0
 ~F000_SEL
-Wire Bus Line
-	4100 2250 4100 3400
+$Comp
+L Riley1:SN74HC266 U6
+U 1 1 5C538149
+P 5800 4750
+F 0 "U6" H 5900 5550 31  0000 C CNN
+F 1 "SN74HC266" H 5600 5550 31  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5800 4650 31  0001 C CNN
+F 3 "" H 5800 4650 31  0001 C CNN
+	1    5800 4750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6100 4550
+NoConn ~ 6100 4950
+NoConn ~ 6100 5300
+NoConn ~ 5500 5400
+NoConn ~ 5500 5200
+NoConn ~ 5500 5050
+NoConn ~ 5500 4850
+NoConn ~ 5500 4650
+NoConn ~ 5500 4450
+$Comp
+L Device:C C?
+U 1 1 5C53984C
+P 6450 4700
+AR Path="/5C4D9B3D/5C53984C" Ref="C?"  Part="1" 
+AR Path="/5C53C6C8/5C53984C" Ref="C20"  Part="1" 
+F 0 "C20" H 6565 4746 50  0000 L CNN
+F 1 "0.1uF" H 6565 4655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6488 4550 50  0001 C CNN
+F 3 "~" H 6450 4700 50  0001 C CNN
+	1    6450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 4550
+Wire Wire Line
+	6450 4850 6450 5600
+Wire Wire Line
+	6450 5600 5800 5600
 Wire Bus Line
 	6500 2250 6500 3400
+Wire Bus Line
+	4100 2250 4100 3400
+$Comp
+L power:GND #PWR021
+U 1 1 5C539E87
+P 5800 5600
+F 0 "#PWR021" H 5800 5350 50  0001 C CNN
+F 1 "GND" H 5805 5427 50  0000 C CNN
+F 2 "" H 5800 5600 50  0001 C CNN
+F 3 "" H 5800 5600 50  0001 C CNN
+	1    5800 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5800 5600
+$Comp
+L power:VCC #PWR020
+U 1 1 5C539F06
+P 5800 3900
+F 0 "#PWR020" H 5800 3750 50  0001 C CNN
+F 1 "VCC" H 5817 4073 50  0000 C CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5800 3900
 $EndSCHEMATC

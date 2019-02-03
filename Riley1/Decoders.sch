@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 4 4
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -22,13 +22,12 @@ AR Path="/5C4D9B3D/5C53CFB1" Ref="U?"  Part="1"
 AR Path="/5C53C6C8/5C53CFB1" Ref="U4"  Part="1" 
 F 0 "U4" H 4850 3650 50  0000 C CNN
 F 1 "SN74HC138N" V 4700 3150 50  0000 C CNN
-F 2 "DIP254P762X508-16" H 5150 3600 50  0001 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 5150 3600 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc138" H 5150 3600 50  0001 L CNN
 F 4 "3 line to 8-line decoders demultiplexers" H 5150 3500 50  0001 L CNN "Description"
-F 5 "" H 5150 3300 50  0001 L CNN "Height"
-F 6 "595-SN74HC138N" H 5150 3300 50  0001 L CNN "Mouser Part Number"
-F 7 "Texas Instruments" H 5150 3200 50  0001 L CNN "Manufacturer_Name"
-F 8 "SN74HC138N" H 5150 3100 50  0001 L CNN "Manufacturer_Part_Number"
+F 5 "595-SN74HC138N" H 5150 3300 50  0001 L CNN "Mouser Part Number"
+F 6 "Texas Instruments" H 5150 3200 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN74HC138N" H 5150 3100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    4750 3150
 	1    0    0    -1  
 $EndComp
@@ -102,7 +101,7 @@ AR Path="/5C4D9B3D/5C53CFE0" Ref="U?"  Part="1"
 AR Path="/5C53C6C8/5C53CFE0" Ref="U7"  Part="1" 
 F 0 "U7" H 7250 3650 50  0000 C CNN
 F 1 "SN74HC138N" V 7100 3150 50  0000 C CNN
-F 2 "DIP254P762X508-16" H 7550 3600 50  0001 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 7550 3600 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc138" H 7550 3600 50  0001 L CNN
 F 4 "3 line to 8-line decoders demultiplexers" H 7550 3500 50  0001 L CNN "Description"
 F 5 "" H 7550 3300 50  0001 L CNN "Height"
@@ -279,10 +278,6 @@ Wire Wire Line
 	6450 4850 6450 5600
 Wire Wire Line
 	6450 5600 5800 5600
-Wire Bus Line
-	6500 2250 6500 3400
-Wire Bus Line
-	4100 2250 4100 3400
 $Comp
 L power:GND #PWR021
 U 1 1 5C539E87
@@ -307,4 +302,8 @@ F 3 "" H 5800 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5800 3900
+Wire Bus Line
+	6500 2250 6500 3400
+Wire Bus Line
+	4100 2250 4100 3400
 $EndSCHEMATC

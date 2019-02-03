@@ -37,6 +37,11 @@ $CMP SN74HC573AN
 F http://www.ti.com/lit/ds/symlink/sn74hc573a.pdf
 $ENDCMP
 #
+$CMP W65C22N
+D W65C22N Versatile Interface Adapter (VIA)
+F http://www.westerndesigncenter.com/wdc/documentation/w65c22.pdf
+$ENDCMP
+#
 $CMP WD65C816S_-65xx
 D WD65C816S 8Bit Microprocessor
 F https://www.westerndesigncenter.com/wdc/documentation/w65c816s.pdf

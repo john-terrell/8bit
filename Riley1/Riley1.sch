@@ -685,7 +685,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 4400 8500 4400
 Wire Wire Line
-	7800 4200 8350 4200
+	7800 4200 8150 4200
 Wire Wire Line
 	7800 5000 7800 5300
 Wire Wire Line
@@ -700,14 +700,6 @@ Wire Wire Line
 	8400 4600 8500 4600
 Wire Wire Line
 	8500 4500 8350 4500
-Wire Wire Line
-	8350 4500 8350 4200
-Connection ~ 8350 4200
-Wire Wire Line
-	8350 4700 8350 4500
-Wire Wire Line
-	8350 4700 8500 4700
-Connection ~ 8350 4500
 Wire Wire Line
 	9200 4600 9450 4600
 Text Label 9450 4600 0    50   ~ 0
@@ -862,8 +854,6 @@ F 3 "" H 5400 3600 31  0001 C CNN
 $EndComp
 Wire Wire Line
 	5650 1200 5850 1200
-Wire Wire Line
-	8350 4200 9000 4200
 Wire Wire Line
 	7800 5300 9000 5300
 $Comp
@@ -1158,6 +1148,20 @@ Wire Wire Line
 	5350 6600 5650 6600
 Text Label 5650 6600 2    47   ~ 0
 R~W
+$Comp
+L Device:R R12
+U 1 1 5C5B57D4
+P 8150 4350
+F 0 "R12" V 8150 4350 50  0000 C CNN
+F 1 "3K3" V 8250 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8080 4350 50  0001 C CNN
+F 3 "~" H 8150 4350 50  0001 C CNN
+	1    8150 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 8150 4200
+Wire Wire Line
+	8150 4700 8150 4500
 Wire Bus Line
 	5950 2350 5950 3350
 Wire Bus Line
@@ -1168,4 +1172,22 @@ Wire Bus Line
 	1550 2200 1550 3950
 Wire Bus Line
 	4850 2350 4850 5400
+Wire Wire Line
+	8150 4200 8350 4200
+Wire Wire Line
+	8150 4700 8500 4700
+$Comp
+L Device:R R13
+U 1 1 5C5B967E
+P 8350 4350
+F 0 "R13" V 8350 4350 50  0000 C CNN
+F 1 "3K3" V 8450 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8280 4350 50  0001 C CNN
+F 3 "~" H 8350 4350 50  0001 C CNN
+	1    8350 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 8350 4200
+Wire Wire Line
+	8350 4200 9000 4200
 $EndSCHEMATC

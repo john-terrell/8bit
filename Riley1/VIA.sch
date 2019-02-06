@@ -250,6 +250,10 @@ Wire Bus Line
 	6250 3600 6250 3500
 Wire Bus Line
 	6250 3500 6500 3500
+Text HLabel 6450 2500 2    50   BiDi ~ 0
+CA[1..2]
+Text HLabel 6500 3500 2    50   BiDi ~ 0
+CB[1..2]
 Wire Bus Line
 	4750 2000 4750 2800
 Wire Bus Line
@@ -258,8 +262,4 @@ Wire Bus Line
 	6250 3700 6250 4400
 Wire Bus Line
 	4750 3250 4750 4000
-Text HLabel 6450 2500 2    50   BiDi ~ 0
-CA[1..2]
-Text HLabel 6500 3500 2    50   BiDi ~ 0
-CB[1..2]
 $EndSCHEMATC

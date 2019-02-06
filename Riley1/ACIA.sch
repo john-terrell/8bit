@@ -398,11 +398,11 @@ Wire Wire Line
 	5200 2250 4700 2250
 Wire Wire Line
 	4400 2250 4250 2250
+Connection ~ 4250 2250
+Wire Wire Line
+	4250 2250 4250 2650
 Wire Bus Line
 	6300 1800 6300 2250
 Wire Bus Line
 	6900 1800 6900 3150
-Connection ~ 4250 2250
-Wire Wire Line
-	4250 2250 4250 2650
 $EndSCHEMATC

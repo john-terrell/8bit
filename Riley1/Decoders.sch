@@ -148,8 +148,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 3300 5700 3300
 Wire Wire Line
-	5700 3300 5700 2500
-Wire Wire Line
 	5700 2500 5950 2500
 Connection ~ 5950 2500
 Connection ~ 3850 3800
@@ -302,6 +300,19 @@ F 3 "" H 5800 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5800 3900
+$Comp
+L Device:R R14
+U 1 1 5C5BB0B0
+P 5700 2650
+F 0 "R14" H 5770 2696 50  0000 L CNN
+F 1 "3K3" H 5770 2605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5630 2650 50  0001 C CNN
+F 3 "~" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3300 5700 2800
 Wire Bus Line
 	6500 2250 6500 3400
 Wire Bus Line

@@ -191,10 +191,8 @@ Wire Wire Line
 	3650 2500 3650 2900
 Wire Wire Line
 	3650 3200 3650 3800
-Text HLabel 4000 3300 0    47   Input ~ 0
+Text HLabel 3350 3300 0    47   Input ~ 0
 E
-Text HLabel 5500 4300 0    47   Input ~ 0
-!E
 Entry Wire Line
 	4100 2900 4200 3000
 Entry Wire Line
@@ -209,8 +207,6 @@ Wire Wire Line
 	4200 3350 3850 3350
 Wire Wire Line
 	3850 3350 3850 3800
-Wire Wire Line
-	4200 3300 4000 3300
 Text HLabel 4100 2250 0    47   Input ~ 0
 A[0..23]
 Wire Wire Line
@@ -246,15 +242,12 @@ F 3 "" H 5800 4650 31  0001 C CNN
 	1    5800 4750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6100 4550
 NoConn ~ 6100 4950
 NoConn ~ 6100 5300
 NoConn ~ 5500 5400
 NoConn ~ 5500 5200
 NoConn ~ 5500 5050
 NoConn ~ 5500 4850
-NoConn ~ 5500 4650
-NoConn ~ 5500 4450
 $Comp
 L Device:C C?
 U 1 1 5C53984C
@@ -313,8 +306,27 @@ F 3 "~" H 5700 2650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5700 3300 5700 2800
+Wire Wire Line
+	3350 3300 3500 3300
+Wire Wire Line
+	3500 3300 3500 4450
+Wire Wire Line
+	3500 4450 5500 4450
+Connection ~ 3500 3300
+Wire Wire Line
+	3500 3300 4200 3300
+Wire Wire Line
+	5500 4650 5350 4650
+Wire Wire Line
+	5350 4650 5350 5600
+Wire Wire Line
+	5350 5600 5800 5600
 Wire Bus Line
 	6500 2250 6500 3400
 Wire Bus Line
 	4100 2250 4100 3400
+Text Label 6100 4550 0    50   ~ 0
+!E
+Text Label 5500 4300 2    50   ~ 0
+!E
 $EndSCHEMATC

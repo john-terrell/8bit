@@ -400,10 +400,6 @@ F4 "~RAM_SEL" I L 1300 6900 50
 F5 "~ROM_SEL" I L 1300 7000 50 
 F6 "~WE" I L 1300 7150 50 
 $EndSheet
-Text Label 7650 1900 2    31   ~ 0
-E
-Text Label 8250 1900 0    31   ~ 0
-!E
 Text Label 8900 1750 2    31   ~ 0
 ~IO_SEL
 Text Label 8900 1950 2    31   ~ 0
@@ -519,7 +515,7 @@ L Device:R R1
 U 1 1 5C4EEEAC
 P 3650 1100
 F 0 "R1" H 3720 1146 50  0000 L CNN
-F 1 "150 Ohm" H 3720 1055 50  0000 L CNN
+F 1 "330 Ohm" H 3720 1055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3580 1100 50  0001 C CNN
 F 3 "~" H 3650 1100 50  0001 C CNN
 	1    3650 1100
@@ -625,17 +621,6 @@ F 3 "~" H 1100 1160 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 1600 1950 1600
-$Comp
-L Device:Fuse F1
-U 1 1 5C4FFA2C
-P 1850 850
-F 0 "F1" V 1653 850 50  0000 C CNN
-F 1 "Fuse" V 1744 850 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031-8002_Horizontal_Open" V 1780 850 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/schurter-inc/0031.8002/486-3643-ND/640587" H 1850 850 50  0001 C CNN
-	1    1850 850 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2250 850  2200 850 
 Connection ~ 2250 850 
@@ -765,10 +750,9 @@ F0 "Decoders" 31
 F1 "Decoders.sch" 31
 F2 "A[0..23]" I L 2750 6600 50 
 F3 "E" I L 2750 7100 50 
-F4 "!E" I L 2750 7200 50 
-F5 "~D000_SEL" O R 3450 6750 50 
-F6 "~E000_SEL" O R 3450 6900 50 
-F7 "~F000_SEL" O R 3450 7050 50 
+F4 "~D000_SEL" O R 3450 6750 50 
+F5 "~E000_SEL" O R 3450 6900 50 
+F6 "~F000_SEL" O R 3450 7050 50 
 $EndSheet
 Wire Bus Line
 	2450 6600 2750 6600
@@ -778,10 +762,6 @@ Wire Wire Line
 	2450 7100 2750 7100
 Text Label 2450 7100 0    47   ~ 0
 E
-Wire Wire Line
-	2450 7200 2750 7200
-Text Label 2450 7200 0    47   ~ 0
-!E
 Text Label 3750 6900 2    31   ~ 0
 ~E000_SEL
 Text Label 8900 2150 2    31   ~ 0
@@ -821,8 +801,6 @@ F 3 "~" H 1950 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2200 850 
-Wire Wire Line
-	2200 850  2000 850 
 Connection ~ 1950 1600
 Wire Wire Line
 	1950 1600 2250 1600
@@ -1180,6 +1158,10 @@ $EndComp
 Connection ~ 8350 4200
 Wire Wire Line
 	8350 4200 9000 4200
+NoConn ~ 7650 1900
+NoConn ~ 8250 1900
+Wire Wire Line
+	1700 850  2200 850 
 Wire Bus Line
 	5950 2350 5950 3350
 Wire Bus Line

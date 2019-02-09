@@ -169,10 +169,10 @@ Connection ~ 4000 2650
 Wire Wire Line
 	4000 2650 4000 2700
 $Comp
-L Riley1:AS6C4008-55PCN U8
+L Riley1:AS6C4008-55PCN U6
 U 1 1 5C4DA8B7
 P 7400 3700
-F 0 "U8" H 7550 4650 50  0000 C CNN
+F 0 "U6" H 7550 4650 50  0000 C CNN
 F 1 "AS6C4008-55PCN" V 7400 3700 50  0000 C CNN
 F 2 "Package_DIP:DIP-32_W15.24mm_Socket_LongPads" H 7750 4600 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/AS6C4008-55PCN.pdf" H 7750 4500 50  0001 L CNN
@@ -244,10 +244,10 @@ Entry Wire Line
 Entry Wire Line
 	6800 4550 6900 4650
 $Comp
-L Device:C C7
+L Device:C C6
 U 1 1 5C4DA8E0
 P 6300 3750
-F 0 "C7" H 6415 3796 50  0000 L CNN
+F 0 "C6" H 6415 3796 50  0000 L CNN
 F 1 "0.1uF" H 6415 3705 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6338 3600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 6300 3750 50  0001 C CNN

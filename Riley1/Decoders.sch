@@ -129,8 +129,8 @@ L Device:C C?
 U 1 1 5C53CFF1
 P 5950 3050
 AR Path="/5C4D9B3D/5C53CFF1" Ref="C?"  Part="1" 
-AR Path="/5C53C6C8/5C53CFF1" Ref="C6"  Part="1" 
-F 0 "C6" H 6065 3096 50  0000 L CNN
+AR Path="/5C53C6C8/5C53CFF1" Ref="C7"  Part="1" 
+F 0 "C7" H 6065 3096 50  0000 L CNN
 F 1 "0.1uF" H 6065 3005 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5988 2900 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 5950 3050 50  0001 C CNN
@@ -232,10 +232,10 @@ Text HLabel 7700 3400 2    47   Output ~ 0
 Text HLabel 7700 3500 2    47   Output ~ 0
 ~F000_SEL
 $Comp
-L Riley1:SN74HC266 U6
+L Riley1:SN74HC266 U8
 U 1 1 5C538149
 P 5800 4750
-F 0 "U6" H 5900 5550 31  0000 C CNN
+F 0 "U8" H 5900 5550 31  0000 C CNN
 F 1 "SN74HC266" H 5600 5550 31  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5800 4650 31  0001 C CNN
 F 3 "" H 5800 4650 31  0001 C CNN
@@ -253,8 +253,8 @@ L Device:C C?
 U 1 1 5C53984C
 P 6450 4700
 AR Path="/5C4D9B3D/5C53984C" Ref="C?"  Part="1" 
-AR Path="/5C53C6C8/5C53984C" Ref="C20"  Part="1" 
-F 0 "C20" H 6565 4746 50  0000 L CNN
+AR Path="/5C53C6C8/5C53984C" Ref="C8"  Part="1" 
+F 0 "C8" H 6565 4746 50  0000 L CNN
 F 1 "0.1uF" H 6565 4655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6488 4550 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 6450 4700 50  0001 C CNN
@@ -321,12 +321,12 @@ Wire Wire Line
 	5350 4650 5350 5600
 Wire Wire Line
 	5350 5600 5800 5600
-Wire Bus Line
-	6500 2250 6500 3400
-Wire Bus Line
-	4100 2250 4100 3400
 Text Label 6100 4550 0    50   ~ 0
 !E
 Text Label 5500 4300 2    50   ~ 0
 !E
+Wire Bus Line
+	6500 2250 6500 3400
+Wire Bus Line
+	4100 2250 4100 3400
 $EndSCHEMATC

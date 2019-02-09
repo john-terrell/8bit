@@ -45,8 +45,8 @@ U 1 1 5C527C29
 P 1700 2850
 AR Path="/5C4D9B3D/5C527C29" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C527C29" Ref="C?"  Part="1" 
-AR Path="/5C4E8467/5C527C29" Ref="C13"  Part="1" 
-F 0 "C13" H 1550 2950 50  0000 L CNN
+AR Path="/5C4E8467/5C527C29" Ref="C15"  Part="1" 
+F 0 "C15" H 1550 2950 50  0000 L CNN
 F 1 "0.1uF" H 1500 2750 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1738 2700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1700 2850 50  0001 C CNN
@@ -140,8 +140,8 @@ U 1 1 5C52D77A
 P 1700 5100
 AR Path="/5C4D9B3D/5C52D77A" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C52D77A" Ref="C?"  Part="1" 
-AR Path="/5C4E8467/5C52D77A" Ref="C14"  Part="1" 
-F 0 "C14" H 1550 5200 50  0000 L CNN
+AR Path="/5C4E8467/5C52D77A" Ref="C16"  Part="1" 
+F 0 "C16" H 1550 5200 50  0000 L CNN
 F 1 "0.1uF" H 1500 5000 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1738 4950 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1700 5100 50  0001 C CNN
@@ -217,8 +217,8 @@ U 1 1 5C52FF28
 P 4600 3200
 AR Path="/5C4D9B3D/5C52FF28" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C52FF28" Ref="C?"  Part="1" 
-AR Path="/5C4E8467/5C52FF28" Ref="C15"  Part="1" 
-F 0 "C15" H 4715 3246 50  0000 L CNN
+AR Path="/5C4E8467/5C52FF28" Ref="C14"  Part="1" 
+F 0 "C14" H 4715 3246 50  0000 L CNN
 F 1 "0.1uF" H 4715 3155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4638 3050 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4600 3200 50  0001 C CNN

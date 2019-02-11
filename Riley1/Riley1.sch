@@ -1034,6 +1034,8 @@ Text Label 3750 7200 2    31   ~ 0
 ~WE
 Wire Wire Line
 	3450 6600 3750 6600
+Text Label 3750 6600 2    31   ~ 0
+!PHI2
 Wire Bus Line
 	5950 2350 5950 3350
 Wire Bus Line
@@ -1044,6 +1046,4 @@ Wire Bus Line
 	1550 2200 1550 3950
 Wire Bus Line
 	4850 2350 4850 5400
-Text Label 3750 6600 2    31   ~ 0
-!PHI2
 $EndSCHEMATC

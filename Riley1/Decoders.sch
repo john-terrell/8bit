@@ -225,12 +225,6 @@ Entry Wire Line
 	6500 2700 6600 2800
 Text HLabel 6500 2250 0    47   Input ~ 0
 A[0..23]
-Text HLabel 7700 3300 2    47   Output ~ 0
-~D000_SEL
-Text HLabel 7700 3400 2    47   Output ~ 0
-~E000_SEL
-Text HLabel 7700 3500 2    47   Output ~ 0
-~F000_SEL
 $Comp
 L Riley1:SN74HC266 U8
 U 1 1 5C538149
@@ -242,12 +236,6 @@ F 3 "" H 5800 4650 31  0001 C CNN
 	1    5800 4750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6100 4950
-NoConn ~ 6100 5300
-NoConn ~ 5500 5400
-NoConn ~ 5500 5200
-NoConn ~ 5500 5050
-NoConn ~ 5500 4850
 $Comp
 L Device:C C?
 U 1 1 5C53984C
@@ -318,15 +306,164 @@ Wire Wire Line
 Wire Wire Line
 	5500 4650 5350 4650
 Wire Wire Line
-	5350 4650 5350 5600
+	5350 4650 5350 5050
 Wire Wire Line
 	5350 5600 5800 5600
 Text Label 6100 4550 0    50   ~ 0
 !E
 Text Label 5500 4300 2    50   ~ 0
 !E
-Wire Bus Line
-	6500 2250 6500 3400
+$Comp
+L dk_Logic-Gates-and-Inverters:SN74HC00N U?
+U 1 1 5C61469C
+P 8800 4300
+AR Path="/5C61469C" Ref="U?"  Part="1" 
+AR Path="/5C53C6C8/5C61469C" Ref="U2"  Part="1" 
+F 0 "U2" H 8900 5250 60  0000 C CNN
+F 1 "SN74HC00N" H 9250 5350 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 9000 4500 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc00.pdf" H 9000 4600 60  0001 L CNN
+F 4 "296-1563-5-ND" H 9000 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC00N" H 9000 4800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9000 4900 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 9000 5000 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/lit/ds/symlink/sn74hc00.pdf" H 9000 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209" H 9000 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE NAND 4CH 2-INP 14DIP" H 9000 5300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 9000 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9000 5500 60  0001 L CNN "Status"
+	1    8800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6146CE
+P 8800 3300
+AR Path="/5C6146CE" Ref="#PWR?"  Part="1" 
+AR Path="/5C53C6C8/5C6146CE" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 8800 3150 50  0001 C CNN
+F 1 "VCC" H 8817 3473 50  0000 C CNN
+F 2 "" H 8800 3300 50  0001 C CNN
+F 3 "" H 8800 3300 50  0001 C CNN
+	1    8800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6146D4
+P 8800 5300
+AR Path="/5C6146D4" Ref="#PWR?"  Part="1" 
+AR Path="/5C53C6C8/5C6146D4" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 8800 5050 50  0001 C CNN
+F 1 "GND" H 8805 5127 50  0000 C CNN
+F 2 "" H 8800 5300 50  0001 C CNN
+F 3 "" H 8800 5300 50  0001 C CNN
+	1    8800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6146DA
+P 9500 4250
+AR Path="/5C6146DA" Ref="C?"  Part="1" 
+AR Path="/5C53C6C8/5C6146DA" Ref="C2"  Part="1" 
+F 0 "C2" H 9615 4296 50  0000 L CNN
+F 1 "0.1uF" H 9615 4205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9538 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 9500 4250 50  0001 C CNN
+	1    9500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3300 9500 3300
+Wire Wire Line
+	9500 3300 9500 4100
+Wire Wire Line
+	8800 5300 9500 5300
+Wire Wire Line
+	9500 5300 9500 4400
+NoConn ~ 8500 4800
+NoConn ~ 8500 5000
+NoConn ~ 9100 4900
+Text Label 8500 3600 2    31   ~ 0
+PHI2
+Text Notes 6800 5200 0    31   ~ 0
+NOTE: A19 isn't used in this schematic so this is left unconnected.
+Text HLabel 5250 4850 0    50   Input ~ 0
+R~W
+Wire Wire Line
+	5500 4850 5250 4850
+Wire Wire Line
+	5500 5050 5350 5050
+Connection ~ 5350 5050
+Wire Wire Line
+	5350 5050 5350 5400
+Wire Wire Line
+	5500 5400 5350 5400
+Connection ~ 5350 5400
+Wire Wire Line
+	5350 5400 5350 5600
+Text HLabel 5250 5200 0    50   Input ~ 0
+PHI2
+Wire Wire Line
+	5250 5200 5500 5200
+Text HLabel 6500 5300 2    50   Output ~ 0
+!PHI2
+Wire Wire Line
+	6500 5300 6100 5300
+Connection ~ 8800 3300
+Connection ~ 8800 5300
+Wire Wire Line
+	6100 4950 7250 4950
+Text Notes 6750 5000 0    31   ~ 0
+Write Enable Circuit
+Wire Wire Line
+	7250 3800 8500 3800
+Wire Wire Line
+	7250 3800 7250 4950
+Text HLabel 9550 3700 2    47   Output ~ 0
+~WE
+Wire Wire Line
+	9100 3700 9550 3700
+Text HLabel 9550 4100 2    47   Output ~ 0
+~RAM_SEL
+Wire Wire Line
+	9100 4100 9550 4100
+Text HLabel 9550 4500 2    47   Output ~ 0
+~ROM_SEL
+Wire Wire Line
+	9550 4500 9300 4500
+Wire Wire Line
+	7700 3500 7700 4600
+Wire Wire Line
+	7700 4600 8500 4600
+Wire Wire Line
+	7700 3400 7850 3400
+Wire Wire Line
+	7850 3400 7850 4400
+Wire Wire Line
+	7850 4400 8500 4400
+Wire Wire Line
+	9300 4500 9300 5650
+Wire Wire Line
+	9300 5650 8250 5650
+Wire Wire Line
+	8250 5650 8250 4200
+Wire Wire Line
+	8250 4200 8500 4200
+Connection ~ 9300 4500
+Wire Wire Line
+	9300 4500 9100 4500
+Wire Wire Line
+	7700 3300 8000 3300
+Wire Wire Line
+	8000 3300 8000 4000
+Wire Wire Line
+	8000 4000 8500 4000
 Wire Bus Line
 	4100 2250 4100 3400
+Wire Bus Line
+	6500 2250 6500 3400
+Text HLabel 8000 3300 2    47   Output ~ 0
+~IO_SEL
 $EndSCHEMATC

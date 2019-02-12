@@ -53,7 +53,8 @@ AR Path="/5C53C6C8/5C53CFC1" Ref="C4"  Part="1"
 F 0 "C4" H 3765 3096 50  0000 L CNN
 F 1 "0.1uF" H 3765 3005 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3688 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 3650 3050 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 3650 3050 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    3650 3050
 	1    0    0    -1  
 $EndComp
@@ -133,7 +134,8 @@ AR Path="/5C53C6C8/5C53CFF1" Ref="C7"  Part="1"
 F 0 "C7" H 6065 3096 50  0000 L CNN
 F 1 "0.1uF" H 6065 3005 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5988 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 5950 3050 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 5950 3050 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    5950 3050
 	1    0    0    -1  
 $EndComp
@@ -233,6 +235,7 @@ F 0 "U8" H 5900 5550 31  0000 C CNN
 F 1 "SN74HC266" H 5600 5550 31  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5800 4650 31  0001 C CNN
 F 3 "" H 5800 4650 31  0001 C CNN
+F 4 "609-4712-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    5800 4750
 	1    0    0    -1  
 $EndComp
@@ -245,7 +248,8 @@ AR Path="/5C53C6C8/5C53984C" Ref="C8"  Part="1"
 F 0 "C8" H 6565 4746 50  0000 L CNN
 F 1 "0.1uF" H 6565 4655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6488 4550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 6450 4700 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 6450 4700 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    6450 4700
 	1    0    0    -1  
 $EndComp
@@ -321,9 +325,9 @@ AR Path="/5C61469C" Ref="U?"  Part="1"
 AR Path="/5C53C6C8/5C61469C" Ref="U2"  Part="1" 
 F 0 "U2" H 8900 5250 60  0000 C CNN
 F 1 "SN74HC00N" H 9250 5350 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 9000 4500 60  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9000 4500 60  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc00.pdf" H 9000 4600 60  0001 L CNN
-F 4 "296-1563-5-ND" H 9000 4700 60  0001 L CNN "Digi-Key_PN"
+F 4 "609-4712-ND" H 9000 4700 60  0001 L CNN "Digi-Key_PN"
 F 5 "SN74HC00N" H 9000 4800 60  0001 L CNN "MPN"
 F 6 "Integrated Circuits (ICs)" H 9000 4900 60  0001 L CNN "Category"
 F 7 "Logic - Gates and Inverters" H 9000 5000 60  0001 L CNN "Family"
@@ -370,7 +374,8 @@ AR Path="/5C53C6C8/5C6146DA" Ref="C2"  Part="1"
 F 0 "C2" H 9615 4296 50  0000 L CNN
 F 1 "0.1uF" H 9615 4205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9538 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 9500 4250 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 9500 4250 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    9500 4250
 	1    0    0    -1  
 $EndComp
@@ -460,10 +465,10 @@ Wire Wire Line
 	8000 3300 8000 4000
 Wire Wire Line
 	8000 4000 8500 4000
+Text HLabel 8000 3300 2    47   Output ~ 0
+~IO_SEL
 Wire Bus Line
 	4100 2250 4100 3400
 Wire Bus Line
 	6500 2250 6500 3400
-Text HLabel 8000 3300 2    47   Output ~ 0
-~IO_SEL
 $EndSCHEMATC

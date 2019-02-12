@@ -22,6 +22,7 @@ F 0 "U1" H 2450 4550 60  0000 C CNN
 F 1 "WD65C816S_-65xx" V 2300 3450 60  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 2300 1800 60  0001 C CNN
 F 3 "" H 1800 2450 60  0000 C CNN
+F 4 "609-4716-ND" H 2300 3450 50  0001 C CNN "Digi-Key_PN"
 	1    2300 3450
 	1    0    0    -1  
 $EndComp
@@ -32,7 +33,8 @@ P 1050 3400
 F 0 "C1" H 1165 3446 50  0000 L CNN
 F 1 "0.1uF" H 1165 3355 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1088 3250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1050 3400 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 1050 3400 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    1050 3400
 	1    0    0    -1  
 $EndComp
@@ -284,7 +286,8 @@ P 4750 1200
 F 0 "C9" H 4865 1246 50  0000 L CNN
 F 1 "0.1uF" H 4865 1155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4788 1050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4750 1200 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4750 1200 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4750 1200
 	1    0    0    -1  
 $EndComp
@@ -353,7 +356,9 @@ P 3650 1450
 F 0 "D1" V 3688 1333 50  0000 R CNN
 F 1 "LED" V 3597 1333 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 3650 1450 50  0001 C CNN
-F 3 "~" H 3650 1450 50  0001 C CNN
+F 3 "http://www.dialightsignalsandcomponents.com/Assets/Brochures_And_Catalogs/Indication/521-9498.pdf" H 3650 1450 50  0001 C CNN
+F 4 "350-1555-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
+F 5 "350-1555-ND" H 0   0   50  0001 C CNN "Family"
 	1    3650 1450
 	0    -1   -1   0   
 $EndComp
@@ -408,7 +413,8 @@ P 2250 1100
 F 0 "C22" H 2365 1146 50  0000 L CNN
 F 1 "10uF" H 2365 1055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2250 1100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 2250 1100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 2250 1100 50  0001 C CNN
+F 4 "445-180817-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    2250 1100
 	1    0    0    -1  
 $EndComp
@@ -419,7 +425,8 @@ P 3200 1100
 F 0 "C10" H 3315 1146 50  0000 L CNN
 F 1 "1uF" H 3315 1055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3200 1100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 3200 1100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 3200 1100 50  0001 C CNN
+F 4 "445-173261-1-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    3200 1100
 	1    0    0    -1  
 $EndComp
@@ -462,7 +469,8 @@ P 1050 1200
 F 0 "J1" H 1105 1525 50  0000 C CNN
 F 1 "9V Barrel Jack" H 1105 1434 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1100 1160 50  0001 C CNN
-F 3 "~" H 1100 1160 50  0001 C CNN
+F 3 "https://www.cui.com/product/resource/pj-063ah.pdf" H 1100 1160 50  0001 C CNN
+F 4 "CP-063AH-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    1050 1200
 	1    0    0    -1  
 $EndComp
@@ -496,7 +504,7 @@ U 1 1 5C5075D4
 P 8550 3500
 F 0 "U11" H 8500 4200 60  0000 C CNN
 F 1 "SN74HC74N" H 8500 4094 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 8750 3700 60  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8750 3700 60  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 8750 3800 60  0001 L CNN
 F 4 "296-1602-5-ND" H 8750 3900 60  0001 L CNN "Digi-Key_PN"
 F 5 "SN74HC74N" H 8750 4000 60  0001 L CNN "MPN"
@@ -887,7 +895,8 @@ P 4250 3150
 F 0 "C12" H 4365 3196 50  0000 L CNN
 F 1 "0.1uF" H 4365 3105 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 3000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 3150 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4250 3150 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4250 3150
 	1    0    0    -1  
 $EndComp
@@ -908,7 +917,8 @@ P 4250 5100
 F 0 "C13" H 4365 5146 50  0000 L CNN
 F 1 "0.1uF" H 4365 5055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 4950 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 5100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4250 5100 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4250 5100
 	1    0    0    -1  
 $EndComp
@@ -1006,7 +1016,8 @@ P 9450 3450
 F 0 "C11" H 9565 3496 50  0000 L CNN
 F 1 "0.1uF" H 9565 3405 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9488 3300 50  0001 C CNN
-F 3 "~" H 9450 3450 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 9450 3450 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    9450 3450
 	1    0    0    -1  
 $EndComp

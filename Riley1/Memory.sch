@@ -22,6 +22,7 @@ F 0 "U5" H 4150 4850 50  0000 C CNN
 F 1 "GLS29E0010-(DIP32/PLCC32)" V 4000 3800 50  0000 C CNN
 F 2 "Package_DIP:DIP-32_W15.24mm_Socket_LongPads" H 3600 4750 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/176/71061-1102136.pdf" H 3700 4850 50  0001 C CNN
+F 4 "609-5428-ND" H 4000 3800 50  0001 C CNN "Digi-Key_PN"
 	1    4000 3800
 	1    0    0    -1  
 $EndComp
@@ -156,7 +157,8 @@ P 2900 3750
 F 0 "C5" H 3015 3796 50  0000 L CNN
 F 1 "0.1uF" H 3015 3705 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2938 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 2900 3750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 2900 3750 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    2900 3750
 	1    0    0    -1  
 $EndComp
@@ -180,6 +182,7 @@ F 4 "CMOS SRAM" H 7750 4400 50  0001 L CNN "Description"
 F 5 "913-AS6C4008-55PCN" H 7750 4200 50  0001 L CNN "Mouser Part Number"
 F 6 "Alliance Memory" H 7750 4100 50  0001 L CNN "Manufacturer_Name"
 F 7 "AS6C4008-55PCN" H 7750 4000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "609-5428-ND" H 7400 3700 50  0001 C CNN "Digi-Key_PN"
 	1    7400 3700
 	1    0    0    -1  
 $EndComp
@@ -250,7 +253,8 @@ P 6300 3750
 F 0 "C6" H 6415 3796 50  0000 L CNN
 F 1 "0.1uF" H 6415 3705 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6338 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 6300 3750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 6300 3750 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    6300 3750
 	1    0    0    -1  
 $EndComp

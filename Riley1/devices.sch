@@ -49,7 +49,8 @@ AR Path="/5C4E8467/5C527C29" Ref="C15"  Part="1"
 F 0 "C15" H 1550 2950 50  0000 L CNN
 F 1 "0.1uF" H 1500 2750 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1738 2700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1700 2850 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 1700 2850 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    1700 2850
 	1    0    0    -1  
 $EndComp
@@ -144,7 +145,8 @@ AR Path="/5C4E8467/5C52D77A" Ref="C16"  Part="1"
 F 0 "C16" H 1550 5200 50  0000 L CNN
 F 1 "0.1uF" H 1500 5000 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1738 4950 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1700 5100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 1700 5100 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    1700 5100
 	1    0    0    -1  
 $EndComp
@@ -221,7 +223,8 @@ AR Path="/5C4E8467/5C52FF28" Ref="C14"  Part="1"
 F 0 "C14" H 4715 3246 50  0000 L CNN
 F 1 "0.1uF" H 4715 3155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4638 3050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4600 3200 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4600 3200 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
@@ -429,7 +432,7 @@ U 1 1 5C5867CE
 P 5550 3250
 F 0 "U14" H 5700 4050 31  0000 C CNN
 F 1 "SN74HC02" H 5300 4050 31  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 5550 3150 31  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5550 3150 31  0001 C CNN
 F 3 "" H 5550 3150 31  0001 C CNN
 	1    5550 3250
 	1    0    0    -1  
@@ -579,7 +582,9 @@ P 7350 4900
 F 0 "D2" V 7388 4783 50  0000 R CNN
 F 1 "LED" V 7297 4783 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 7350 4900 50  0001 C CNN
-F 3 "~" H 7350 4900 50  0001 C CNN
+F 3 "http://www.dialightsignalsandcomponents.com/Assets/Brochures_And_Catalogs/Indication/521-9498.pdf" H 7350 4900 50  0001 C CNN
+F 4 "350-1555-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
+F 5 "350-1555-ND" H 0   0   50  0001 C CNN "Family"
 	1    7350 4900
 	0    -1   -1   0   
 $EndComp
@@ -696,7 +701,9 @@ P 9000 5550
 F 0 "J3" H 9050 6150 50  0000 C CNN
 F 1 "Conn_02x12_Odd_Even" V 9650 5550 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 9000 5550 50  0001 C CNN
-F 3 "~" H 9000 5550 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1740556&DocType=Customer+Drawing&DocLang=English" H 9000 5550 50  0001 C CNN
+F 4 "1-1740556-2-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
+F 5 "1-1740556-2-ND " H 0   0   50  0001 C CNN "Family"
 	1    9000 5550
 	1    0    0    -1  
 $EndComp

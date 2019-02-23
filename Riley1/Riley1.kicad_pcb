@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.2-bee76a0~70~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.1-3-g963ef8bb5)")
 
   (general
     (thickness 1.6)
@@ -12,8 +12,8 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (1 In1.Cu power)
-    (2 In2.Cu power)
+    (1 In1.Cu power hide)
+    (2 In2.Cu power hide)
     (31 B.Cu signal)
     (33 F.Adhes user)
     (35 F.Paste user)
@@ -31,7 +31,7 @@
   )
 
   (setup
-    (last_trace_width 0.762)
+    (last_trace_width 0.254)
     (user_trace_width 0.762)
     (trace_clearance 0.254)
     (zone_clearance 0.508)

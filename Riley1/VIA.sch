@@ -22,6 +22,7 @@ F 0 "U17" H 5650 4600 60  0000 C CNN
 F 1 "W65C22N" V 5500 3500 60  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 4750 4400 60  0000 C CNN
 F 3 "http://www.westerndesigncenter.com/wdc/documentation/w65c22.pdf" H 5500 4894 60  0001 C CNN
+F 4 "609-4716-ND" H 5500 3500 50  0001 C CNN "Digi-Key_PN"
 	1    5500 3500
 	1    0    0    -1  
 $EndComp
@@ -92,13 +93,14 @@ Text HLabel 4200 3200 0    50   Input ~ 0
 Wire Wire Line
 	4200 3200 4850 3200
 $Comp
-L Device:C C9
+L Device:C C17
 U 1 1 5C57CC44
 P 3350 3250
-F 0 "C9" H 3465 3296 50  0000 L CNN
+F 0 "C17" H 3465 3296 50  0000 L CNN
 F 1 "0.1uF" H 3465 3205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3388 3100 50  0001 C CNN
-F 3 "~" H 3350 3250 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 3350 3250 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    3350 3250
 	1    0    0    -1  
 $EndComp

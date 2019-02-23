@@ -22,17 +22,19 @@ F 0 "U1" H 2450 4550 60  0000 C CNN
 F 1 "WD65C816S_-65xx" V 2300 3450 60  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 2300 1800 60  0001 C CNN
 F 3 "" H 1800 2450 60  0000 C CNN
+F 4 "609-4716-ND" H 2300 3450 50  0001 C CNN "Digi-Key_PN"
 	1    2300 3450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L Device:C C1
 U 1 1 5C4A3FB0
 P 1050 3400
-F 0 "C10" H 1165 3446 50  0000 L CNN
+F 0 "C1" H 1165 3446 50  0000 L CNN
 F 1 "0.1uF" H 1165 3355 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1088 3250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 1050 3400 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 1050 3400 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    1050 3400
 	1    0    0    -1  
 $EndComp
@@ -69,54 +71,6 @@ F 3 "" H 2300 4800 50  0001 C CNN
 $EndComp
 Connection ~ 2300 4800
 $Comp
-L dk_Logic-Gates-and-Inverters:SN74HC00N U3
-U 1 1 5C4A4C43
-P 9200 2050
-F 0 "U3" H 9300 3000 60  0000 C CNN
-F 1 "SN74HC00N" H 9650 3100 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 9400 2250 60  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc00.pdf" H 9400 2350 60  0001 L CNN
-F 4 "296-1563-5-ND" H 9400 2450 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74HC00N" H 9400 2550 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 9400 2650 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 9400 2750 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/lit/ds/symlink/sn74hc00.pdf" H 9400 2850 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209" H 9400 2950 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE NAND 4CH 2-INP 14DIP" H 9400 3050 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 9400 3150 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9400 3250 60  0001 L CNN "Status"
-	1    9200 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Logic-Gates-and-Inverters:SN74HC14N U2
-U 1 1 5C4A508E
-P 7950 2100
-F 0 "U2" H 8100 2650 60  0000 C CNN
-F 1 "SN74HC14N" H 7400 2750 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 8150 2300 60  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc14.pdf" H 8150 2400 60  0001 L CNN
-F 4 "296-1577-5-ND" H 8150 2500 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74HC14N" H 8150 2600 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 8150 2700 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 8150 2800 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/lit/ds/symlink/sn74hc14.pdf" H 8150 2900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74HC14N/296-1577-5-ND/277223" H 8150 3000 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC INVERTER SCHMITT 6CH 14DIP" H 8150 3100 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 8150 3200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8150 3300 60  0001 L CNN "Status"
-	1    7950 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 1800 7650 1800
-Wire Wire Line
-	8250 1800 8550 1800
-Wire Wire Line
-	8550 1800 8550 1550
-Wire Wire Line
-	8550 1550 8900 1550
-$Comp
 L Device:R R5
 U 1 1 5C4A57DC
 P 1250 4400
@@ -147,97 +101,6 @@ F 3 "~" H 3350 4150 50  0001 C CNN
 	1    3350 4150
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C C11
-U 1 1 5C4A732C
-P 7100 1950
-F 0 "C11" H 7215 1996 50  0000 L CNN
-F 1 "0.1uF" H 7215 1905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7138 1800 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 7100 1950 50  0001 C CNN
-	1    7100 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 1800 7100 1500
-Wire Wire Line
-	7100 1500 7950 1500
-Wire Wire Line
-	7100 2100 7100 2600
-Wire Wire Line
-	7100 2600 7950 2600
-$Comp
-L power:GND #PWR0103
-U 1 1 5C4A7785
-P 7950 2600
-F 0 "#PWR0103" H 7950 2350 50  0001 C CNN
-F 1 "GND" H 7955 2427 50  0000 C CNN
-F 2 "" H 7950 2600 50  0001 C CNN
-F 3 "" H 7950 2600 50  0001 C CNN
-	1    7950 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0104
-U 1 1 5C4A77C6
-P 7950 1500
-F 0 "#PWR0104" H 7950 1350 50  0001 C CNN
-F 1 "VCC" H 7967 1673 50  0000 C CNN
-F 2 "" H 7950 1500 50  0001 C CNN
-F 3 "" H 7950 1500 50  0001 C CNN
-	1    7950 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 5C4A7951
-P 9200 1050
-F 0 "#PWR0105" H 9200 900 50  0001 C CNN
-F 1 "VCC" H 9217 1223 50  0000 C CNN
-F 2 "" H 9200 1050 50  0001 C CNN
-F 3 "" H 9200 1050 50  0001 C CNN
-	1    9200 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5C4A7B92
-P 9200 3050
-F 0 "#PWR0106" H 9200 2800 50  0001 C CNN
-F 1 "GND" H 9205 2877 50  0000 C CNN
-F 2 "" H 9200 3050 50  0001 C CNN
-F 3 "" H 9200 3050 50  0001 C CNN
-	1    9200 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5C4A7BB4
-P 9900 2000
-F 0 "C3" H 10015 2046 50  0000 L CNN
-F 1 "0.1uF" H 10015 1955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9938 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 9900 2000 50  0001 C CNN
-	1    9900 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 1050 9900 1050
-Wire Wire Line
-	9900 1050 9900 1850
-Wire Wire Line
-	9200 3050 9900 3050
-Wire Wire Line
-	9900 3050 9900 2150
-NoConn ~ 7650 2100
-NoConn ~ 7650 2200
-NoConn ~ 7650 2300
-NoConn ~ 8250 2300
-NoConn ~ 8250 2200
-NoConn ~ 8250 2100
-NoConn ~ 8900 2550
-NoConn ~ 8900 2750
-NoConn ~ 9500 2650
 NoConn ~ 2950 3750
 NoConn ~ 2950 4350
 Wire Wire Line
@@ -267,8 +130,6 @@ Wire Wire Line
 NoConn ~ 2950 4050
 NoConn ~ 2950 3950
 NoConn ~ 2950 3850
-Text Notes 8300 1550 0    31   ~ 0
-Write Enable Circuit\n
 Entry Wire Line
 	2950 3150 3050 3050
 Entry Wire Line
@@ -379,16 +240,10 @@ Text Label 2950 4250 0    31   ~ 0
 E
 Text Label 2950 4450 0    31   ~ 0
 ~RESET
-Text Label 7550 1800 0    31   ~ 0
-R~W
 Wire Wire Line
 	1650 4350 1400 4350
 Wire Wire Line
 	1400 4350 1400 4400
-Text Label 9500 1450 0    31   ~ 0
-~WE
-Text Label 8900 1350 2    31   ~ 0
-PHI2
 $Sheet
 S 1300 6500 700  800 
 U 5C4D9B3D
@@ -400,16 +255,6 @@ F4 "~RAM_SEL" I L 1300 6900 50
 F5 "~ROM_SEL" I L 1300 7000 50 
 F6 "~WE" I L 1300 7150 50 
 $EndSheet
-Text Label 7650 1900 2    31   ~ 0
-E
-Text Label 8250 1900 0    31   ~ 0
-!E
-Text Label 8900 1750 2    31   ~ 0
-~IO_SEL
-Text Label 8900 1950 2    31   ~ 0
-~ROM_SEL
-Text Label 9500 1850 0    31   ~ 0
-~RAM_SEL
 $Sheet
 S 4650 6500 700  800 
 U 5C4E8467
@@ -435,13 +280,14 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/DS1813.pdf" H 5400 1200 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C9
 U 1 1 5C4E996B
 P 4750 1200
-F 0 "C8" H 4865 1246 50  0000 L CNN
+F 0 "C9" H 4865 1246 50  0000 L CNN
 F 1 "0.1uF" H 4865 1155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4788 1050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4750 1200 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4750 1200 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4750 1200
 	1    0    0    -1  
 $EndComp
@@ -510,7 +356,9 @@ P 3650 1450
 F 0 "D1" V 3688 1333 50  0000 R CNN
 F 1 "LED" V 3597 1333 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 3650 1450 50  0001 C CNN
-F 3 "~" H 3650 1450 50  0001 C CNN
+F 3 "http://www.dialightsignalsandcomponents.com/Assets/Brochures_And_Catalogs/Indication/521-9498.pdf" H 3650 1450 50  0001 C CNN
+F 4 "350-1555-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
+F 5 "350-1555-ND" H 0   0   50  0001 C CNN "Family"
 	1    3650 1450
 	0    -1   -1   0   
 $EndComp
@@ -519,7 +367,7 @@ L Device:R R1
 U 1 1 5C4EEEAC
 P 3650 1100
 F 0 "R1" H 3720 1146 50  0000 L CNN
-F 1 "150 Ohm" H 3720 1055 50  0000 L CNN
+F 1 "330 Ohm" H 3720 1055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3580 1100 50  0001 C CNN
 F 3 "~" H 3650 1100 50  0001 C CNN
 	1    3650 1100
@@ -559,24 +407,26 @@ F 3 "" H 4050 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C1
+L Device:CP1 C22
 U 1 1 5C4F0942
 P 2250 1100
-F 0 "C1" H 2365 1146 50  0000 L CNN
+F 0 "C22" H 2365 1146 50  0000 L CNN
 F 1 "10uF" H 2365 1055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2250 1100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 2250 1100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 2250 1100 50  0001 C CNN
+F 4 "445-180817-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    2250 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C2
+L Device:CP1 C10
 U 1 1 5C4F09C4
 P 3200 1100
-F 0 "C2" H 3315 1146 50  0000 L CNN
+F 0 "C10" H 3315 1146 50  0000 L CNN
 F 1 "1uF" H 3315 1055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3200 1100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 3200 1100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 3200 1100 50  0001 C CNN
+F 4 "445-173261-1-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    3200 1100
 	1    0    0    -1  
 $EndComp
@@ -619,23 +469,13 @@ P 1050 1200
 F 0 "J1" H 1105 1525 50  0000 C CNN
 F 1 "9V Barrel Jack" H 1105 1434 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1100 1160 50  0001 C CNN
-F 3 "~" H 1100 1160 50  0001 C CNN
+F 3 "https://www.cui.com/product/resource/pj-063ah.pdf" H 1100 1160 50  0001 C CNN
+F 4 "CP-063AH-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    1050 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1700 1600 1950 1600
-$Comp
-L Device:Fuse F1
-U 1 1 5C4FFA2C
-P 1850 850
-F 0 "F1" V 1653 850 50  0000 C CNN
-F 1 "Fuse" V 1744 850 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031-8002_Horizontal_Open" V 1780 850 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/schurter-inc/0031.8002/486-3643-ND/640587" H 1850 850 50  0001 C CNN
-	1    1850 850 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2250 850  2200 850 
 Connection ~ 2250 850 
@@ -650,98 +490,94 @@ Wire Wire Line
 $Comp
 L Riley1:ECS-2100X X1
 U 1 1 5C507331
-P 7800 4600
-F 0 "X1" H 7950 4950 50  0000 R CNN
-F 1 "ECS-2100X" V 7600 4800 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7800 4600 50  0001 C CNN
-F 3 "" H 7800 4600 50  0001 C CNN
-	1    7800 4600
+P 7450 3400
+F 0 "X1" H 7600 3750 50  0000 R CNN
+F 1 "ECS-2100X" V 7250 3600 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7450 3400 50  0001 C CNN
+F 3 "" H 7450 3400 50  0001 C CNN
+	1    7450 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Logic-Flip-Flops:SN74HC74N U11
 U 1 1 5C5075D4
-P 8900 4700
-F 0 "U11" H 8850 5400 60  0000 C CNN
-F 1 "SN74HC74N" H 8850 5294 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 9100 4900 60  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 9100 5000 60  0001 L CNN
-F 4 "296-1602-5-ND" H 9100 5100 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74HC74N" H 9100 5200 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 9100 5300 60  0001 L CNN "Category"
-F 7 "Logic - Flip Flops" H 9100 5400 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 9100 5500 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74HC74N/296-1602-5-ND/277248" H 9100 5600 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC FF D-TYPE DUAL 1BIT 14DIP" H 9100 5700 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 9100 5800 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9100 5900 60  0001 L CNN "Status"
-	1    8900 4700
+P 8550 3500
+F 0 "U11" H 8500 4200 60  0000 C CNN
+F 1 "SN74HC74N" H 8500 4094 60  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8750 3700 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 8750 3800 60  0001 L CNN
+F 4 "296-1602-5-ND" H 8750 3900 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC74N" H 8750 4000 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8750 4100 60  0001 L CNN "Category"
+F 7 "Logic - Flip Flops" H 8750 4200 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/lit/ds/symlink/sn74hc74.pdf" H 8750 4300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC74N/296-1602-5-ND/277248" H 8750 4400 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC FF D-TYPE DUAL 1BIT 14DIP" H 8750 4500 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 8750 4600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8750 4700 60  0001 L CNN "Status"
+	1    8550 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 4600 8250 4600
+	7700 3400 7900 3400
 Wire Wire Line
-	8250 4600 8250 4400
+	7900 3400 7900 3200
 Wire Wire Line
-	8250 4400 8500 4400
+	7900 3200 8150 3200
 Wire Wire Line
-	7800 4200 8150 4200
+	7450 3000 7800 3000
 Wire Wire Line
-	7800 5000 7800 5300
+	7450 3800 7450 4100
 Wire Wire Line
-	9200 4700 9350 4700
+	8850 3500 9000 3500
 Wire Wire Line
-	9350 4700 9350 3900
+	9000 3500 9000 2700
 Wire Wire Line
-	9350 3900 8400 3900
+	9000 2700 8050 2700
 Wire Wire Line
-	8400 3900 8400 4600
+	8050 2700 8050 3400
 Wire Wire Line
-	8400 4600 8500 4600
+	8050 3400 8150 3400
 Wire Wire Line
-	8500 4500 8350 4500
+	8150 3300 8000 3300
 Wire Wire Line
-	9200 4600 9450 4600
-Text Label 9450 4600 0    50   ~ 0
+	8850 3400 9100 3400
+Text Label 9100 3400 0    50   ~ 0
 PHI2
 $Comp
 L power:GND #PWR014
 U 1 1 5C5147F9
-P 9450 5300
-F 0 "#PWR014" H 9450 5050 50  0001 C CNN
-F 1 "GND" H 9455 5127 50  0000 C CNN
-F 2 "" H 9450 5300 50  0001 C CNN
-F 3 "" H 9450 5300 50  0001 C CNN
-	1    9450 5300
+P 9100 4100
+F 0 "#PWR014" H 9100 3850 50  0001 C CNN
+F 1 "GND" H 9105 3927 50  0000 C CNN
+F 2 "" H 9100 4100 50  0001 C CNN
+F 3 "" H 9100 4100 50  0001 C CNN
+	1    9100 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR013
 U 1 1 5C514861
-P 9450 4200
-F 0 "#PWR013" H 9450 4050 50  0001 C CNN
-F 1 "VCC" H 9467 4373 50  0000 C CNN
-F 2 "" H 9450 4200 50  0001 C CNN
-F 3 "" H 9450 4200 50  0001 C CNN
-	1    9450 4200
+P 9100 3000
+F 0 "#PWR013" H 9100 2850 50  0001 C CNN
+F 1 "VCC" H 9117 3173 50  0000 C CNN
+F 2 "" H 9100 3000 50  0001 C CNN
+F 3 "" H 9100 3000 50  0001 C CNN
+	1    9100 3000
 	1    0    0    -1  
 $EndComp
-Text Notes 8100 5600 0    50   ~ 0
+Text Notes 7750 4400 0    50   ~ 0
 Clock Circuit\n(PHI2 = 0.5 * ECS-2100X Output)
-NoConn ~ 8500 4800
-NoConn ~ 8500 4900
-NoConn ~ 8500 5000
-NoConn ~ 8500 5100
-NoConn ~ 9200 4900
-NoConn ~ 9200 4800
+NoConn ~ 8150 3600
+NoConn ~ 8150 3700
+NoConn ~ 8150 3800
+NoConn ~ 8150 3900
+NoConn ~ 8850 3700
+NoConn ~ 8850 3600
 Wire Bus Line
 	1300 6650 800  6650
 Text Label 800  6650 0    31   ~ 0
 A[0..23]
-Text Label 9500 2250 0    31   ~ 0
-~ROM_SEL
-Text Label 8900 2350 2    31   ~ 0
-~F000_SEL
 Wire Bus Line
 	800  6750 1300 6750
 Text Label 800  6750 0    31   ~ 0
@@ -765,10 +601,13 @@ F0 "Decoders" 31
 F1 "Decoders.sch" 31
 F2 "A[0..23]" I L 2750 6600 50 
 F3 "E" I L 2750 7100 50 
-F4 "!E" I L 2750 7200 50 
-F5 "~D000_SEL" O R 3450 6750 50 
-F6 "~E000_SEL" O R 3450 6900 50 
-F7 "~F000_SEL" O R 3450 7050 50 
+F4 "~IO_SEL" O R 3450 6750 50 
+F5 "~RAM_SEL" O R 3450 6900 50 
+F6 "~ROM_SEL" O R 3450 7050 50 
+F7 "R~W" I L 2750 6950 47 
+F8 "PHI2" I L 2750 6800 47 
+F9 "!PHI2" O R 3450 6600 47 
+F10 "~WE" O R 3450 7200 47 
 $EndSheet
 Wire Bus Line
 	2450 6600 2750 6600
@@ -778,26 +617,16 @@ Wire Wire Line
 	2450 7100 2750 7100
 Text Label 2450 7100 0    47   ~ 0
 E
-Wire Wire Line
-	2450 7200 2750 7200
-Text Label 2450 7200 0    47   ~ 0
-!E
 Text Label 3750 6900 2    31   ~ 0
-~E000_SEL
-Text Label 8900 2150 2    31   ~ 0
-~E000_SEL
+~RAM_SEL
 Wire Wire Line
 	3450 6900 3750 6900
 Text Label 3750 7050 2    31   ~ 0
-~F000_SEL
+~ROM_SEL
 Wire Wire Line
 	3450 7050 3750 7050
 Text Label 3750 6750 2    31   ~ 0
 ~IO_SEL
-Text Label 7650 2000 2    31   ~ 0
-PHI2
-Text Label 8250 2000 0    31   ~ 0
-!PHI2
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C565720
@@ -821,8 +650,6 @@ F 3 "~" H 1950 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2200 850 
-Wire Wire Line
-	2200 850  2000 850 
 Connection ~ 1950 1600
 Wire Wire Line
 	1950 1600 2250 1600
@@ -855,7 +682,7 @@ $EndComp
 Wire Wire Line
 	5650 1200 5850 1200
 Wire Wire Line
-	7800 5300 9000 5300
+	7450 4100 8650 4100
 $Comp
 L Riley1:SN74HC245 U13
 U 1 1 5C500719
@@ -1062,13 +889,14 @@ A23
 Text Label 5950 2550 1    31   ~ 0
 A[0..23]
 $Comp
-L Device:C C21
+L Device:C C12
 U 1 1 5C513AC0
 P 4250 3150
-F 0 "C21" H 4365 3196 50  0000 L CNN
+F 0 "C12" H 4365 3196 50  0000 L CNN
 F 1 "0.1uF" H 4365 3105 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 3000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 3150 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4250 3150 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4250 3150
 	1    0    0    -1  
 $EndComp
@@ -1083,13 +911,14 @@ Wire Wire Line
 	4250 4000 4700 4000
 Connection ~ 4700 4000
 $Comp
-L Device:C C12
+L Device:C C13
 U 1 1 5C519EA1
 P 4250 5100
-F 0 "C12" H 4365 5146 50  0000 L CNN
+F 0 "C13" H 4365 5146 50  0000 L CNN
 F 1 "0.1uF" H 4365 5055 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 4950 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 5100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4250 5100 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4250 5100
 	1    0    0    -1  
 $EndComp
@@ -1103,12 +932,12 @@ Wire Wire Line
 Wire Wire Line
 	4250 6050 5400 6050
 Connection ~ 5400 6050
-Connection ~ 9000 4200
+Connection ~ 8650 3000
 Wire Wire Line
-	9000 4200 9450 4200
-Connection ~ 9000 5300
+	8650 3000 9100 3000
+Connection ~ 8650 4100
 Wire Wire Line
-	9000 5300 9450 5300
+	8650 4100 9100 4100
 Connection ~ 5850 1200
 Wire Wire Line
 	5850 1200 6150 1200
@@ -1122,8 +951,6 @@ Wire Bus Line
 Text Label 4350 6600 0    47   ~ 0
 A[0..23]
 NoConn ~ 5850 3050
-Text Notes 6000 3000 0    31   ~ 0
-NOTE: A19 isn't used in this schematic so this is left unconnected.
 Wire Wire Line
 	5350 7150 5650 7150
 Text Label 5650 7150 2    50   ~ 0
@@ -1151,35 +978,75 @@ R~W
 $Comp
 L Device:R R12
 U 1 1 5C5B57D4
-P 8150 4350
-F 0 "R12" V 8150 4350 50  0000 C CNN
-F 1 "3K3" V 8250 4350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8080 4350 50  0001 C CNN
-F 3 "~" H 8150 4350 50  0001 C CNN
-	1    8150 4350
+P 7800 3150
+F 0 "R12" V 7800 3150 50  0000 C CNN
+F 1 "3K3" V 7900 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7730 3150 50  0001 C CNN
+F 3 "~" H 7800 3150 50  0001 C CNN
+	1    7800 3150
 	-1   0    0    1   
 $EndComp
-Connection ~ 8150 4200
+Connection ~ 7800 3000
 Wire Wire Line
-	8150 4700 8150 4500
+	7800 3500 7800 3300
 Wire Wire Line
-	8150 4200 8350 4200
+	7800 3000 8000 3000
 Wire Wire Line
-	8150 4700 8500 4700
+	7800 3500 8150 3500
 $Comp
 L Device:R R13
 U 1 1 5C5B967E
-P 8350 4350
-F 0 "R13" V 8350 4350 50  0000 C CNN
-F 1 "3K3" V 8450 4350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8280 4350 50  0001 C CNN
-F 3 "~" H 8350 4350 50  0001 C CNN
-	1    8350 4350
+P 8000 3150
+F 0 "R13" V 8000 3150 50  0000 C CNN
+F 1 "3K3" V 8100 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7930 3150 50  0001 C CNN
+F 3 "~" H 8000 3150 50  0001 C CNN
+	1    8000 3150
 	-1   0    0    1   
 $EndComp
-Connection ~ 8350 4200
+Connection ~ 8000 3000
 Wire Wire Line
-	8350 4200 9000 4200
+	8000 3000 8650 3000
+Wire Wire Line
+	1700 850  2200 850 
+$Comp
+L Device:C C11
+U 1 1 5C5EB8B0
+P 9450 3450
+F 0 "C11" H 9565 3496 50  0000 L CNN
+F 1 "0.1uF" H 9565 3405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9488 3300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 9450 3450 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
+	1    9450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3000 9450 3000
+Wire Wire Line
+	9450 3000 9450 3300
+Connection ~ 9100 3000
+Wire Wire Line
+	9450 3600 9450 4100
+Wire Wire Line
+	9450 4100 9100 4100
+Connection ~ 9100 4100
+Wire Wire Line
+	2750 6800 2450 6800
+Text Label 2450 6800 0    47   ~ 0
+PHI2
+Wire Wire Line
+	2750 6950 2450 6950
+Text Label 2450 6950 0    47   ~ 0
+R~W
+Wire Wire Line
+	3450 7200 3750 7200
+Text Label 3750 7200 2    31   ~ 0
+~WE
+Wire Wire Line
+	3450 6600 3750 6600
+Text Label 3750 6600 2    31   ~ 0
+!PHI2
 Wire Bus Line
 	5950 2350 5950 3350
 Wire Bus Line

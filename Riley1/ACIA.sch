@@ -24,6 +24,7 @@ F 0 "U18" H 5850 3600 50  0000 C CNN
 F 1 "W65C51N" V 5700 2850 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 5700 2850 50  0001 C CNN
 F 3 "" H 5700 2850 50  0001 C CNN
+F 4 "609-4715-ND" H 5700 2850 50  0001 C CNN "Digi-Key_PN"
 	1    5700 2850
 	1    0    0    -1  
 $EndComp
@@ -125,11 +126,12 @@ U 1 1 5C56E315
 P 4250 2800
 AR Path="/5C56E315" Ref="C?"  Part="1" 
 AR Path="/5C4E8467/5C56E315" Ref="C?"  Part="1" 
-AR Path="/5C4E8467/5C56DB68/5C56E315" Ref="C16"  Part="1" 
-F 0 "C16" H 4365 2846 50  0000 L CNN
+AR Path="/5C4E8467/5C56DB68/5C56E315" Ref="C18"  Part="1" 
+F 0 "C18" H 4365 2846 50  0000 L CNN
 F 1 "0.1uF" H 4365 2755 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 2650 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4250 2800 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4250 2800 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4250 2800
 	1    0    0    -1  
 $EndComp
@@ -155,6 +157,7 @@ F 0 "X2" H 5250 5400 50  0000 R CNN
 F 1 "ECS-100X" V 4900 5250 50  0000 R CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5100 5050 50  0001 C CNN
 F 3 "" H 5100 5050 50  0001 C CNN
+F 4 "609-4712-ND" H 5100 5050 50  0001 C CNN "Digi-Key_PN"
 	1    5100 5050
 	1    0    0    -1  
 $EndComp
@@ -165,11 +168,12 @@ P 4500 5050
 AR Path="/5C4D9B3D/5C56E32B" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C56E32B" Ref="C?"  Part="1" 
 AR Path="/5C4E8467/5C56E32B" Ref="C?"  Part="1" 
-AR Path="/5C4E8467/5C56DB68/5C56E32B" Ref="C17"  Part="1" 
-F 0 "C17" H 4615 5096 50  0000 L CNN
+AR Path="/5C4E8467/5C56DB68/5C56E32B" Ref="C20"  Part="1" 
+F 0 "C20" H 4615 5096 50  0000 L CNN
 F 1 "0.1uF" H 4615 5005 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4538 4900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 4500 5050 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 4500 5050 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4500 5050
 	1    0    0    -1  
 $EndComp
@@ -243,19 +247,6 @@ Text HLabel 6550 2450 2    47   Output ~ 0
 ~IRQ
 NoConn ~ 5200 2550
 $Comp
-L Connector:USB_B_Micro J?
-U 1 1 5C56E358
-P 6500 5450
-AR Path="/5C4E8467/5C56E358" Ref="J?"  Part="1" 
-AR Path="/5C4E8467/5C56DB68/5C56E358" Ref="J2"  Part="1" 
-F 0 "J2" H 6555 5917 50  0000 C CNN
-F 1 "USB_B_Micro" H 6555 5826 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Tensility_54-00023_Vertical" H 6650 5400 50  0001 C CNN
-F 3 "~" H 6650 5400 50  0001 C CNN
-	1    6500 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Riley1:MCP2221 U?
 U 1 1 5C56E35F
 P 6950 4200
@@ -263,8 +254,9 @@ AR Path="/5C4E8467/5C56E35F" Ref="U?"  Part="1"
 AR Path="/5C4E8467/5C56DB68/5C56E35F" Ref="U19"  Part="1" 
 F 0 "U19" H 7150 4600 47  0000 C CNN
 F 1 "MCP2221" H 6700 4600 47  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 6950 3950 79  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6950 3950 79  0001 C CNN
 F 3 "" H 6950 3950 79  0001 C CNN
+F 4 "609-4712-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    6950 4200
 	1    0    0    -1  
 $EndComp
@@ -292,7 +284,6 @@ Wire Wire Line
 	7650 4050 7650 5550
 Wire Wire Line
 	7650 5550 6800 5550
-NoConn ~ 6800 5650
 Wire Wire Line
 	4850 2650 4850 4250
 Wire Wire Line
@@ -319,7 +310,8 @@ AR Path="/5C4E8467/5C56DB68/5C56E37F" Ref="C19"  Part="1"
 F 0 "C19" H 8515 4246 50  0000 L CNN
 F 1 "0.1uF" H 8515 4155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8438 4050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 8400 4200 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 8400 4200 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    8400 4200
 	1    0    0    -1  
 $EndComp
@@ -366,11 +358,12 @@ P 7950 4300
 AR Path="/5C4D9B3D/5C56E398" Ref="C?"  Part="1" 
 AR Path="/5C53C6C8/5C56E398" Ref="C?"  Part="1" 
 AR Path="/5C4E8467/5C56E398" Ref="C?"  Part="1" 
-AR Path="/5C4E8467/5C56DB68/5C56E398" Ref="C18"  Part="1" 
-F 0 "C18" H 8065 4346 50  0000 L CNN
+AR Path="/5C4E8467/5C56DB68/5C56E398" Ref="C21"  Part="1" 
+F 0 "C21" H 8065 4346 50  0000 L CNN
 F 1 "0.1uF" H 8065 4255 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7988 4150 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 7950 4300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/leadmlcc_halogenfree_fg_en.pdf" H 7950 4300 50  0001 C CNN
+F 4 "445-174866-1-ND " H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    7950 4300
 	1    0    0    -1  
 $EndComp
@@ -401,6 +394,18 @@ Wire Wire Line
 Connection ~ 4250 2250
 Wire Wire Line
 	4250 2250 4250 2650
+$Comp
+L Connector:USB_B J2
+U 1 1 5C6293AB
+P 6500 5450
+F 0 "J2" H 6555 5917 50  0000 C CNN
+F 1 "USB_B" H 6555 5826 50  0000 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 6650 5400 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/usb-b1hsxx.pdf" H 6650 5400 50  0001 C CNN
+F 4 "ED2983-ND" H 6500 5450 50  0001 C CNN "Digi-Key_PN"
+	1    6500 5450
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	6300 1800 6300 2250
 Wire Bus Line

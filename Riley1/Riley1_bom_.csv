@@ -1,0 +1,44 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Category,Status,Family,MPN,Digi-Key_PN,DK_Datasheet_Link,DK_Detail_Page,Manufacturer,Mouser Part Number,Manufacturer_Name,Manufacturer_Part_Number
+1,Unpolarized capacitor,C,C1 C2 C4 C5 C6 C7 C8 C9 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 C21,0.1uF,C_Disc_D5.0mm_W2.5mm_P5.00mm,19,https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf,,,,,,,,,,,
+2,"Polarized capacitor, US symbol",CP1,C22,10uF,C_Disc_D5.0mm_W2.5mm_P5.00mm,1,https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf,,,,,,,,,,,
+3,"Polarized capacitor, US symbol",CP1,C10,1uF,C_Disc_D5.0mm_W2.5mm_P5.00mm,1,https://www.mouser.com/datasheet/2/400/eadmlcc_halogenfree_fa_en-845009.pdf,,,,,,,,,,,
+4,Light emitting diode,LED,D1 D2,LED,LED_D3.0mm,2,~,,,,,,,,,,,
+5,DC Barrel Jack,Barrel_Jack,J1,9V Barrel Jack,BarrelJack_CUI_PJ-063AH_Horizontal,1,~,,,,,,,,,,,
+6,"Generic connector, double row, 02x12, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x12_Odd_Even,J3,Conn_02x12_Odd_Even,PinHeader_2x12_P2.54mm_Vertical,1,~,,,,,,,,,,,
+7,USB Micro Type B connector,USB_B_Micro,J2,USB_B_Micro,USB_Micro-B_Tensility_54-00023_Vertical,1,~,,,,,,,,,,,
+8,Resistor,R,R9,10k,R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical,1,~,,,,,,,,,,,
+9,Resistor,R,R1 R8,330 Ohm,R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical,2,~,,,,,,,,,,,
+10,Resistor,R,R2 R3 R4 R5 R6 R7 R10 R11 R12 R13 R14,3K3,R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical,11,~,,,,,,,,,,,
+11,SWITCH PUSHBUTTON SPST 1A 30V,GPTS203211B,S1 S2,GPTS203211B,PushButton_12x12mm_THT_GPTS203211B,2,http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf,Switches,Active,Pushbutton Switches,GPTS203211B,CW181-ND,http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf,/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590,CW Industries,,,
+12,CMOS SRAM,AS6C4008-55PCN,U6,AS6C4008-55PCN,DIP-32_W15.24mm_Socket_LongPads,1,https://componentsearchengine.com/Datasheets/1/AS6C4008-55PCN.pdf,,,,,,,,,913-AS6C4008-55PCN,Alliance Memory,AS6C4008-55PCN
+13,5V EconoReset with Pushbutton,DS1813,U9,DS1813,TO-92,1,https://datasheets.maximintegrated.com/en/ds/DS1813.pdf,,,,,,,,,,,
+14,"EEPROM 128K x 8, DIP-32",GLS29E0010-DIP32,U5,GLS29E0010-(DIP32/PLCC32),DIP-32_W15.24mm_Socket_LongPads,1,https://www.mouser.com/datasheet/2/176/71061-1102136.pdf,,,,,,,,,,,
+15,IC REG LINEAR 5V 1.5A TO220AB,L7805CV,U10,L7805CV,TO-220-3,1,http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf,Integrated Circuits (ICs),Active,PMIC - Voltage Regulators - Linear,L7805CV,497-1443-5-ND,http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf,/product-detail/en/stmicroelectronics/L7805CV/497-1443-5-ND/585964,STMicroelectronics,,,
+16,,MCP2221,U19,MCP2221,DIP-14_W7.62mm_Socket_LongPads,1,,,,,,,,,,,,
+17,IC GATE NAND 4CH 2-INP 14DIP,SN74HC00N,U2,SN74HC00N,DIP-14_W3mm,1,http://www.ti.com/lit/ds/symlink/sn74hc00.pdf,Integrated Circuits (ICs),Active,Logic - Gates and Inverters,SN74HC00N,296-1563-5-ND,http://www.ti.com/lit/ds/symlink/sn74hc00.pdf,/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209,Texas Instruments,,,
+18,,SN74HC02,U14,SN74HC02,DIP-14_W3mm,1,,,,,,,,,,,,
+19,3 line to 8-line decoders demultiplexers,SN74HC138N,U4 U7 U15 U16,SN74HC138N,DIP-16_W7.62mm_Socket_LongPads,4,http://www.ti.com/lit/gpn/sn74hc138,,,,,,,,,595-SN74HC138N,Texas Instruments,SN74HC138N
+20,Octal Bus TransceiversWith 3-StateOutputs,SN74HC245,U13,SN74HC245,DIP-20_W7.62mm_Socket_LongPads,1,http://www.ti.com/lit/ds/symlink/sn74hc245.pdf,,,,,,,,,,,
+21,,SN74HC266,U8,SN74HC266,DIP-14_W7.62mm_Socket_LongPads,1,,,,,,,,,,,,
+22,,SN74HC573AN,U12,SN74HC573AN,DIP-20_W7.62mm_Socket_LongPads,1,http://www.ti.com/lit/ds/symlink/sn74hc573a.pdf,,,,,,,,,,,
+23,IC FF D-TYPE DUAL 1BIT 14DIP,SN74HC74N,U11,SN74HC74N,DIP-14_W3mm,1,http://www.ti.com/lit/ds/symlink/sn74hc74.pdf,Integrated Circuits (ICs),Active,Logic - Flip Flops,SN74HC74N,296-1602-5-ND,http://www.ti.com/lit/ds/symlink/sn74hc74.pdf,/product-detail/en/texas-instruments/SN74HC74N/296-1602-5-ND/277248,Texas Instruments,,,
+24,W65C22N Versatile Interface Adapter (VIA),W65C22N,U17,W65C22N,DIP-40_W15.24mm_Socket_LongPads,1,http://www.westerndesigncenter.com/wdc/documentation/w65c22.pdf,,,,,,,,,,,
+25,,W65C51N,U18,W65C51N,DIP-28_W15.24mm_Socket_LongPads,1,,,,,,,,,,,,
+26,WD65C816S 8Bit Microprocessor,WD65C816S_-65xx,U1,WD65C816S_-65xx,DIP-40_W15.24mm_Socket_LongPads,1,https://www.westerndesigncenter.com/wdc/documentation/w65c816s.pdf,,,,,,,,,,,
+27,,ECS-100X,X2,ECS-100X,DIP-14_W7.62mm_LongPads,1,,,,,,,,,,,,
+28,,ECS-2100X,X1,ECS-2100X,DIP-8_W7.62mm_Socket_LongPads,1,,,,,,,,,,,,
+
+
+
+
+
+Component Groups:,28
+Component Count:,62
+Fitted Components:,62
+Number of PCBs:,1
+Total components:,62
+Schematic Version:,
+Schematic Date:,2019-01-24
+BoM Date:,Mon 11 Feb 2019 11:39:07 AM PST
+Schematic Source:,/home/john/Projects/8bit/Riley1/Riley1.sch
+KiCad Version:,Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1

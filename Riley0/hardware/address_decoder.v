@@ -1,3 +1,5 @@
+`timescale 1 ns/10 ps  // time-unit = 1 ns, precision = 10 ps
+
 module address_decoder(	
 	input [15:0] address,
 	output ram_sel,
@@ -5,14 +7,14 @@ module address_decoder(
 	output rom_sel
 	);
 
-wire [7:0] upper_nibble_enable;
+wire [7:0] upper_nibble_enable = 7'1;
 	
 ic_74138 u7(
-	.A(address[12:3]),
+	.A(address[14:12]),
 	.Y(upper_nibble_enable),
-	.E1(address[15]),
+	.E1(0),
 	.E2(0),
-	.E3(0)
+	.E3(address[15])
 	);
 
 assign io_sel = upper_nibble_enable[5];
@@ -26,4 +28,63 @@ ic_7400 u8(
 	.Y3(rom_sel)
 	);
 
+endmodule
+
+module address_decoder_tb;
+
+	reg [15:0] address;
+	wire ram_sel;
+	wire rom_sel;
+	wire io_sel;
+
+	reg clk;
+	
+	// duration for each bit = 20 * timescale = 20 * 1 ns  = 20ns
+	localparam period = 100;
+	 
+	address_decoder decoder(
+		.address(address),
+		.ram_sel(ram_sel),
+		.rom_sel(rom_sel),
+		.io_sel(io_sel)
+		);
+
+		
+	always 
+	begin
+		 clk = 1'b1; 
+		 #50; // high for 20 * timescale = 20 ns
+
+		 clk = 1'b0;
+		 #50; // low for 20 * timescale = 20 ns
+	end		
+	
+	always @(posedge clk)
+	begin
+		address = 16'b0000000000000000;
+		#period; // wait for period
+		// display message if output not matched
+		if(ram_sel != 0 && rom_sel != 1 && io_sel != 1)  
+			$display("Test failed for $0000");
+
+		address = 16'b0010000000000000;
+		#period; // wait for period
+		// display message if output not matched
+		if(ram_sel != 1 && rom_sel != 1 && io_sel != 0)  
+			$display("Test failed for $D000");
+
+		address = 16'b0100000000000000;
+		#period; // wait for period
+		// display message if output not matched
+		if(ram_sel != 1 && rom_sel != 0 && io_sel != 1)  
+			$display("Test failed for $E000");
+
+		address = 16'b1000000000000000;
+		#period; // wait for period
+		// display message if output not matched
+		if(ram_sel != 1 && rom_sel != 0 && io_sel != 1)  
+			$display("Test failed for $F000");
+			
+		$stop;   // end of simulation
+	end
 endmodule

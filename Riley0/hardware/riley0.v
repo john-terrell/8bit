@@ -24,11 +24,22 @@ cpu_65c02 cpu(
 	);
 
 sram ram(
-	.address(ADDRESS),
-	.data(DATA),
+	.address(address),
+	.data(data),
 	.chip_enable(ram_enable),
 	.write_enable(write_enable),
 	.output_enable(output_enable)
+	);
+	
+wire io_sel;
+wire rom_sel;
+wire ram_sel;
+	
+address_decoder address_decoder(
+	.address(address),
+	.ram_sel(ram_sel),
+	.rom_sel(rom_sel),
+	.io_sel(io_sel)
 	);
 	
 endmodule

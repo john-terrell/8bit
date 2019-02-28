@@ -146,12 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 3200 5950 3800
 Wire Wire Line
-	5950 3800 7150 3800
-Wire Wire Line
-	6600 3300 5700 3300
-Wire Wire Line
-	5700 2500 5950 2500
-Connection ~ 5950 2500
+	5950 3800 6200 3800
 Connection ~ 3850 3800
 Wire Wire Line
 	3850 3800 4750 3800
@@ -285,19 +280,6 @@ F 3 "" H 5800 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5800 3900
-$Comp
-L Device:R R14
-U 1 1 5C5BB0B0
-P 5700 2650
-F 0 "R14" H 5770 2696 50  0000 L CNN
-F 1 "3K3" H 5770 2605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5630 2650 50  0001 C CNN
-F 3 "~" H 5700 2650 50  0001 C CNN
-	1    5700 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 3300 5700 2800
 Wire Wire Line
 	3350 3300 3500 3300
 Wire Wire Line
@@ -387,9 +369,6 @@ Wire Wire Line
 	8800 5300 9500 5300
 Wire Wire Line
 	9500 5300 9500 4400
-NoConn ~ 8500 4800
-NoConn ~ 8500 5000
-NoConn ~ 9100 4900
 Text Label 8500 3600 2    31   ~ 0
 PHI2
 Text Notes 6800 5200 0    31   ~ 0
@@ -434,10 +413,8 @@ Text HLabel 9550 4100 2    47   Output ~ 0
 ~RAM_SEL
 Wire Wire Line
 	9100 4100 9550 4100
-Text HLabel 9550 4500 2    47   Output ~ 0
+Text HLabel 9550 4900 2    47   Output ~ 0
 ~ROM_SEL
-Wire Wire Line
-	9550 4500 9300 4500
 Wire Wire Line
 	7700 3500 7700 4600
 Wire Wire Line
@@ -449,16 +426,13 @@ Wire Wire Line
 Wire Wire Line
 	7850 4400 8500 4400
 Wire Wire Line
-	9300 4500 9300 5650
-Wire Wire Line
 	9300 5650 8250 5650
 Wire Wire Line
 	8250 5650 8250 4200
 Wire Wire Line
 	8250 4200 8500 4200
-Connection ~ 9300 4500
 Wire Wire Line
-	9300 4500 9100 4500
+	9300 4900 9100 4900
 Wire Wire Line
 	7700 3300 8000 3300
 Wire Wire Line
@@ -467,8 +441,37 @@ Wire Wire Line
 	8000 4000 8500 4000
 Text HLabel 8000 3300 2    47   Output ~ 0
 ~IO_SEL
+Wire Wire Line
+	9300 4900 9300 5650
+Wire Wire Line
+	9100 4500 9150 4500
+Wire Wire Line
+	9150 4500 9150 5550
+Wire Wire Line
+	9150 5550 8350 5550
+Wire Wire Line
+	8350 5550 8350 4900
+Wire Wire Line
+	8350 4900 8500 4900
+Wire Wire Line
+	8500 4900 8500 4800
+Wire Wire Line
+	8500 4900 8500 5000
+Connection ~ 8500 4900
+Wire Wire Line
+	9300 4900 9550 4900
+Connection ~ 9300 4900
+Text Notes 9200 4800 0    50   ~ 0
+Note: A3/B3 and A4/B4 \nimplement an AND gate.
+Wire Wire Line
+	6600 3300 6200 3300
+Wire Wire Line
+	6200 3300 6200 3800
 Wire Bus Line
 	4100 2250 4100 3400
 Wire Bus Line
 	6500 2250 6500 3400
+Connection ~ 6200 3800
+Wire Wire Line
+	6200 3800 7150 3800
 $EndSCHEMATC

@@ -22,3 +22,8 @@ _saved_*
 
 # Drill files
 *.drl
+Riley0/hardware/db/*
+Riley0/hardware/incremental_db/*
+Riley0/hardware/output_files/*
+Riley0/hardware/simulation/*
+

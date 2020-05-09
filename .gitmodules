@@ -1,0 +1,9 @@
+[submodule "Riley0/hardware/verilog-6502"]
+	path = Riley0/hardware/verilog-6502
+	url = https://github.com/hoglet67/verilog-6502.git
+[submodule "Riley0/hardware/7400_logic_HDL"]
+	path = Riley0/hardware/7400_logic_HDL
+	url = https://github.com/emdarcher/7400_logic_HDL.git
+[submodule "Riley0/hdl/7400_logic_HDL"]
+	path = Riley0/hdl/7400_logic_HDL
+	url = https://github.com/emdarcher/7400_logic_HDL.git
